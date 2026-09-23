@@ -1,0 +1,6 @@
+data/
+public/
+dist/
+package-lock.json
+.github/
+node_modules/

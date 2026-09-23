@@ -1,0 +1,2 @@
+- Minerado com o **Multi-ferramenta** em praticamente qualquer rocha ou pedra de superfície.
+- Também pode ser obtido refinando **Ferrite Pura** ou **Ferrite Magnetizada** de volta em pó.
