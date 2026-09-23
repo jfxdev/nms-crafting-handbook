@@ -1,0 +1,2 @@
+- Mined with the **Multi-Tool** from almost any surface rock or stone.
+- Can also be obtained by refining **Pure Ferrite** or **Magnetised Ferrite** back into dust.

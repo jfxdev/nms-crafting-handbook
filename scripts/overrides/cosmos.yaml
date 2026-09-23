@@ -1,0 +1,27 @@
+# Itens/receitas adicionados manualmente, para conteúdo que ainda não existe nos dados do
+# AssistantNMS (base atual: commit de 2025-10-08, anterior ao COSMOS 7.0 de 2026-09-09).
+#
+# Preencha APENAS com dados verificados no jogo ou nas notas oficiais (nomanssky.com/release-log).
+# Quando o AssistantNMS publicar os dados do COSMOS, rode `npm run data:update`: o build avisa
+# quais overrides passaram a existir na fonte e podem ser removidos daqui.
+#
+# Pendentes (citados nas notas do COSMOS; faltam receita e nome PT verificados):
+#   - Gravitino Coil
+#   - Tractor Beam (módulo de Corvette)
+#
+# Formato:
+# items:
+#   - id: cosmos-gravitino-coil          # ids manuais usam o prefixo "cosmos-"
+#     cat: products                      # raw | products | technology | buildings | ... | others
+#     name: { en: Gravitino Coil, pt: "<nome oficial em PT-BR>" }
+#     group: { en: "...", pt: "..." }
+#     description: { en: "...", pt: "..." }
+#     icon: null                         # ou caminho em public/icons, ex.: products/200.webp
+# recipes:
+#   - type: craft                        # craft | refine | cook
+#     inputs: [{ id: raw8, qty: 50 }]
+#     output: { id: cosmos-gravitino-coil, qty: 1 }
+#     # time: 1.5                        # refine/cook
+#     # op: { en: "...", pt: "..." }
+items: []
+recipes: []
