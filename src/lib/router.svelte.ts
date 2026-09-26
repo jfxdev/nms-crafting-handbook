@@ -23,3 +23,18 @@ export function searchHref(params: URLSearchParams): string {
 export function replaceHash(hash: string): void {
   history.replaceState(history.state, '', hash);
 }
+
+let routeState = $state<Route>(parseRoute());
+window.addEventListener('hashchange', () => {
+  routeState = parseRoute();
+});
+
+export const router = {
+  get route(): Route {
+    return routeState;
+  },
+  /** Re-parses the current hash without waiting for the hashchange event. */
+  sync(): void {
+    routeState = parseRoute();
+  },
+};

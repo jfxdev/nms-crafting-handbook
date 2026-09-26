@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 import { describe, expect, it } from 'vitest';
-import { gameTextToHtml } from '../src/gametext.ts';
-import { createIndex, normalize } from '../src/search.ts';
-import type { Item } from '../src/types.ts';
+import { gameTextToHtml } from '../src/lib/gametext.ts';
+import { createIndex, normalize } from '../src/lib/search.ts';
+import type { Item } from '../src/lib/types.ts';
 
 describe('gameTextToHtml', () => {
   it('converts nested game markup and escapes html', () => {

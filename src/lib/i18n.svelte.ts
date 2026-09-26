@@ -11,6 +11,8 @@ const STRINGS = {
     en: 'Search items (English or Portuguese)…',
     pt: 'Buscar itens (em português ou inglês)…',
   },
+  loading: { en: 'Loading…', pt: 'Carregando…' },
+  loadError: { en: 'Failed to load the catalog: {error}', pt: 'Falha ao carregar o catálogo: {error}' },
   all: { en: 'All', pt: 'Todos' },
   noRecipe: { en: 'No recipe', pt: 'Sem receita' },
   allCategories: { en: 'All categories', pt: 'Todas as categorias' },
@@ -43,6 +45,10 @@ const STRINGS = {
     pt: 'Base de dados do AssistantNMS de {date}, anterior ao {name}: itens adicionados depois podem estar faltando.',
   },
   theme: { en: 'Toggle theme', pt: 'Alternar tema' },
+  aboutData: { en: 'About the data', pt: 'Sobre os dados' },
+  close: { en: 'Close', pt: 'Fechar' },
+  voiceSearch: { en: 'Search by voice', pt: 'Buscar por voz' },
+  listening: { en: 'Listening…', pt: 'Ouvindo…' },
   footer: {
     en: 'Unofficial fan project, not affiliated with Hello Games. Code and data: GPL-3.0-or-later. Item data from AssistantNMS (GPL-3.0). No Man’s Sky, item names and icons © Hello Games.',
     pt: 'Projeto de fã não oficial, sem afiliação com a Hello Games. Código e dados: GPL-3.0-or-later. Dados dos itens do AssistantNMS (GPL-3.0). No Man’s Sky, nomes e ícones dos itens © Hello Games.',
@@ -84,10 +90,18 @@ function initialLang(): Lang {
   return navigator.language.toLowerCase().startsWith('pt') ? 'pt' : 'en';
 }
 
-export let lang: Lang = initialLang();
+const initial = initialLang();
+document.documentElement.lang = initial === 'pt' ? 'pt-BR' : 'en';
+let langState = $state<Lang>(initial);
+
+export const lang = {
+  get current(): Lang {
+    return langState;
+  },
+};
 
 export function setLang(next: Lang): void {
-  lang = next;
+  langState = next;
   document.documentElement.lang = next === 'pt' ? 'pt-BR' : 'en';
   try {
     localStorage.setItem(LANG_KEY, next);
@@ -97,12 +111,12 @@ export function setLang(next: Lang): void {
 }
 
 export function t(key: StringKey, vars: Record<string, string | number> = {}): string {
-  return STRINGS[key][lang].replace(/\{(\w+)\}/g, (_, k: string) => String(vars[k] ?? ''));
+  return STRINGS[key][langState].replace(/\{(\w+)\}/g, (_, k: string) => String(vars[k] ?? ''));
 }
 
-export const loc = (v: Localized): string => v[lang] || v.en;
-export const other = (v: Localized): string => v[lang === 'en' ? 'pt' : 'en'];
+export const loc = (v: Localized): string => v[langState] || v.en;
+export const other = (v: Localized): string => v[langState === 'en' ? 'pt' : 'en'];
 
 const numberFormat = () =>
-  new Intl.NumberFormat(lang === 'pt' ? 'pt-BR' : 'en-US', { maximumFractionDigits: 4 });
+  new Intl.NumberFormat(langState === 'pt' ? 'pt-BR' : 'en-US', { maximumFractionDigits: 4 });
 export const fmt = (n: number): string => numberFormat().format(n);
