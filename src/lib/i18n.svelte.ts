@@ -11,6 +11,8 @@ const STRINGS = {
     en: 'Search items (English or Portuguese)…',
     pt: 'Buscar itens (em português ou inglês)…',
   },
+  loading: { en: 'Loading…', pt: 'Carregando…' },
+  loadError: { en: 'Failed to load the catalog: {error}', pt: 'Falha ao carregar o catálogo: {error}' },
   all: { en: 'All', pt: 'Todos' },
   noRecipe: { en: 'No recipe', pt: 'Sem receita' },
   allCategories: { en: 'All categories', pt: 'Todas as categorias' },

@@ -36,10 +36,10 @@
 </script>
 
 {#if error}
-  <main class="mx-auto max-w-[1100px] px-4 py-8">Failed to load the catalog: {error}</main>
+  <main class="mx-auto max-w-[1100px] px-4 py-8">{t('loadError', { error })}</main>
 {:else if !store || !index}
   <main class="mx-auto max-w-[1100px] px-4 py-8">
-    <p class="text-muted">Loading…</p>
+    <p class="text-muted">{t('loading')}</p>
   </main>
 {:else}
   <Header {store} />

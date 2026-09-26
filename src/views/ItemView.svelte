@@ -41,6 +41,7 @@
     else p.delete('n');
     const qs = p.toString();
     replaceHash(`${itemHref(id)}${qs ? `?${qs}` : ''}`);
+    router.sync();
   }
 
   function showAll(type: RecipeType): void {
