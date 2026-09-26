@@ -10,6 +10,17 @@ export interface Qty {
   qty: number;
 }
 
+export type PartKind = 'starship' | 'corvette';
+
+/** Where a starship/corvette component fits (see src/lib/parts.ts). */
+export interface Part {
+  kind: PartKind;
+  /** Class key: fighter | hauler | explorer | solar | corvette. */
+  cls: string;
+  /** Slot key within the class (cockpit, wings, engines, ...). */
+  slot: string;
+}
+
 export interface Item {
   id: string;
   /** Category key, also the name of the description shard (data/desc/<cat>.json). */
@@ -24,6 +35,8 @@ export interface Item {
   colour?: string;
   /** Recipe types that produce this item; empty means gathered/bought/rewarded. */
   obtain: RecipeType[];
+  /** Set for starship/corvette components usable in the ship builder. */
+  part?: Part;
   /** Added by hand from scripts/overrides (not present in the upstream data). */
   manual?: boolean;
 }

@@ -12,7 +12,10 @@ const STRINGS = {
     pt: 'Buscar itens (em português ou inglês)…',
   },
   loading: { en: 'Loading…', pt: 'Carregando…' },
-  loadError: { en: 'Failed to load the catalog: {error}', pt: 'Falha ao carregar o catálogo: {error}' },
+  loadError: {
+    en: 'Failed to load the catalog: {error}',
+    pt: 'Falha ao carregar o catálogo: {error}',
+  },
   all: { en: 'All', pt: 'Todos' },
   noRecipe: { en: 'No recipe', pt: 'Sem receita' },
   allCategories: { en: 'All categories', pt: 'Todas as categorias' },
@@ -49,6 +52,34 @@ const STRINGS = {
   close: { en: 'Close', pt: 'Fechar' },
   voiceSearch: { en: 'Search by voice', pt: 'Buscar por voz' },
   listening: { en: 'Listening…', pt: 'Ouvindo…' },
+  builder: { en: 'Ship builder', pt: 'Montar nave' },
+  builderIntro: {
+    en: 'Pick a class and one part per slot to preview the assembled ship. Parts come from breaking down ships at the Starship Outfitting unit; assemble them at the Starship Fabricator.',
+    pt: 'Escolha a classe e uma peça por slot para ver a prévia da nave montada. As peças vêm de desmontar naves no Starship Outfitting; a montagem é feita no Starship Fabricator.',
+  },
+  preview: { en: 'Preview', pt: 'Prévia' },
+  previewNote: {
+    en: 'Schematic preview composed from the official part icons (not a 3D render).',
+    pt: 'Prévia esquemática composta com os ícones oficiais das peças (não é um render 3D).',
+  },
+  interiorParts: { en: 'Interior', pt: 'Interior' },
+  emptySlot: { en: 'Empty', pt: 'Vazio' },
+  parts: { en: '{n} parts', pt: '{n} peças' },
+  filterParts: { en: 'Filter parts…', pt: 'Filtrar peças…' },
+  randomize: { en: 'Random', pt: 'Aleatória' },
+  clear: { en: 'Clear', pt: 'Limpar' },
+  copyLink: { en: 'Copy link', pt: 'Copiar link' },
+  copied: { en: 'Link copied!', pt: 'Link copiado!' },
+  build: { en: 'Build', pt: 'Montagem' },
+  totalValue: { en: 'Total value', pt: 'Valor total' },
+  noSelection: { en: 'No part selected yet.', pt: 'Nenhuma peça selecionada ainda.' },
+  remove: { en: 'Remove', pt: 'Remover' },
+  fitsIn: { en: 'Fits: {cls} · {slot}', pt: 'Encaixa em: {cls} · {slot}' },
+  buildWith: { en: 'Build with this part', pt: 'Montar com esta peça' },
+  corvetteNoData: {
+    en: 'Corvette modules are not in the source data yet (AssistantNMS has not published them). Verified parts can be added in scripts/overrides/corvette.yaml.',
+    pt: 'Os módulos de corveta ainda não estão nos dados da fonte (o AssistantNMS não os publicou). Peças verificadas podem ser adicionadas em scripts/overrides/corvette.yaml.',
+  },
   footer: {
     en: 'Unofficial fan project, not affiliated with Hello Games. Code and data: GPL-3.0-or-later. Item data from AssistantNMS (GPL-3.0). No Man’s Sky, item names and icons © Hello Games.',
     pt: 'Projeto de fã não oficial, sem afiliação com a Hello Games. Código e dados: GPL-3.0-or-later. Dados dos itens do AssistantNMS (GPL-3.0). No Man’s Sky, nomes e ícones dos itens © Hello Games.',
@@ -76,6 +107,8 @@ export const CATEGORY_LABEL: Record<string, Localized> = {
   trade: { en: 'Trade items', pt: 'Itens de comércio' },
   procedural: { en: 'Procedural products', pt: 'Produtos procedurais' },
   others: { en: 'Others', pt: 'Outros' },
+  starshipParts: { en: 'Starship parts', pt: 'Peças de nave' },
+  corvetteParts: { en: 'Corvette parts', pt: 'Peças de corveta' },
 };
 
 const LANG_KEY = 'nms-handbook:lang';

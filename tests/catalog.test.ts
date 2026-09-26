@@ -8,7 +8,9 @@ import {
   perUnitOf,
   ratioOf,
   type BuildOutput,
+  type Overrides,
 } from '../scripts/lib/catalog.ts';
+import { isValidPart, starshipPartOf } from '../src/lib/parts.ts';
 
 const root = join(import.meta.dirname, '..');
 let out: BuildOutput;
@@ -96,5 +98,50 @@ describe('I/O ratio', () => {
       { id: 'a', qty: 1 },
       { id: 'b', qty: 1 },
     ]);
+  });
+});
+
+describe('ship builder parts', () => {
+  const build = (overrides: Overrides[]) =>
+    buildCatalog({
+      rawDir: join(root, 'data/raw'),
+      source: JSON.parse(readFileSync(join(root, 'data/SOURCE.json'), 'utf8')),
+      overrides,
+      hasIcon: () => false,
+    });
+
+  it('classifies every upstream starship component into a class and slot', () => {
+    const parts = out.catalog.items.filter((i) => i.part);
+    expect(parts.length).toBe(281);
+    expect(parts.every((i) => i.cat === 'starshipParts' && isValidPart(i.part!))).toBe(true);
+    expect(item('other461').part).toEqual({ kind: 'starship', cls: 'fighter', slot: 'cockpit' });
+    expect(item('other470').part).toEqual({ kind: 'starship', cls: 'fighter', slot: 'wings' });
+    expect(out.warnings.filter((w) => w.includes('unclassified'))).toEqual([]);
+  });
+
+  it('parses the slot from the game description', () => {
+    const desc = "A subcomponent. This module determines the style and position of the ship's ";
+    expect(
+      starshipPartOf('Solar Starship Component', `${desc}primary <STELLAR>solar sails<>.`),
+    ).toEqual({ kind: 'starship', cls: 'solar', slot: 'sails' });
+    expect(starshipPartOf('Hauler Starship Component', `${desc}<STELLAR>engines<>.`)?.slot).toBe(
+      'engines',
+    );
+    expect(starshipPartOf('Starship Subcomponent', desc)).toBeUndefined();
+  });
+
+  it('accepts corvette parts from overrides and rejects unknown slots', () => {
+    const corvette = {
+      id: 'corvette-test',
+      name: { en: 'Test Hab', pt: 'Hab de teste' },
+      part: { kind: 'corvette' as const, cls: 'corvette', slot: 'habitation' },
+    };
+    const built = build([{ items: [corvette] }]);
+    const found = built.catalog.items.find((i) => i.id === 'corvette-test')!;
+    expect(found.cat).toBe('corvetteParts');
+    expect(found.part).toEqual(corvette.part);
+    expect(() =>
+      build([{ items: [{ ...corvette, part: { ...corvette.part, slot: 'x' } }] }]),
+    ).toThrow(/unknown part/);
   });
 });

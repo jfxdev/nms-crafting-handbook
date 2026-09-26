@@ -1,0 +1,33 @@
+# Peças de Corveta para o "Montar nave" (#/builder?c=corvette).
+#
+# O AssistantNMS ainda não publica os módulos de corveta: a árvore "Corvette Modules"
+# (TechTree.lang.json) existe, mas está vazia. Preencha APENAS com dados verificados no jogo
+# (nome EN + nome oficial PT-BR, custo e receita, se houver). Quando a fonte passar a trazer as
+# peças, `npm run data:build` avisa quais overrides já existem upstream e podem sair daqui.
+#
+# Slots (part.slot), na ordem da árvore do jogo:
+#   cockpit      Cockpit
+#   habitation   Habitation Modules        / Módulos de habitação
+#   hull         Hull Plating              / Chapeamento da fuselagem
+#   wings        Wings                     / Asas
+#   reactors     Reactors                  / Reatores
+#   additional   Additional Modules        / Módulos adicionais
+#   furnishings  Furnishings and Utilities / Mobiliário e utilidades
+#   interior     Internal Configuration    / Configuração interna
+#
+# Formato:
+# items:
+#   - id: corvette-hab-example           # ids manuais de corveta usam o prefixo "corvette-"
+#     part: { kind: corvette, cls: corvette, slot: habitation }
+#     name: { en: "<nome EN>", pt: "<nome oficial PT-BR>" }
+#     group: { en: Corvette Module, pt: Módulo de corveta }
+#     description: { en: "...", pt: "..." }
+#     icon: null                         # ou caminho em public/icons, ex.: other/900.webp
+#     value: 0                           # custo (Salvaged Data / unidades), se conhecido
+#     currency: Salvaged Data
+# recipes:
+#   - type: craft
+#     inputs: [{ id: prod6, qty: 10 }]
+#     output: { id: corvette-hab-example, qty: 1 }
+items: []
+recipes: []

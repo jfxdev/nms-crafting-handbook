@@ -6,7 +6,7 @@
   import ThemeToggle from '../components/ThemeToggle.svelte';
   import type { Store } from '../lib/data.ts';
   import { lang, t } from '../lib/i18n.svelte.ts';
-  import { replaceHash, router, searchHref } from '../lib/router.svelte.ts';
+  import { builderHref, replaceHash, router, searchHref } from '../lib/router.svelte.ts';
 
   let { store }: { store: Store } = $props();
 
@@ -48,6 +48,14 @@
       {t('title')}
     </a>
     <div class="flex flex-wrap items-center gap-2">
+      <a
+        href={builderHref({})}
+        aria-current={router.route.name === 'builder' ? 'page' : undefined}
+        class="border-border bg-surface2 text-text hover:border-accent aria-[current=page]:border-accent flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1 text-sm no-underline"
+      >
+        <span aria-hidden="true">🚀</span>
+        <span class="sr-only sm:not-sr-only">{t('builder')}</span>
+      </a>
       <Modal
         title={t('aboutData')}
         closeLabel={t('close')}

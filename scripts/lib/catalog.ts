@@ -3,11 +3,13 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse as parseYaml } from 'yaml';
+import { isValidPart, starshipPartOf } from '../../src/lib/parts.ts';
 import type {
   Catalog,
   DescriptionShard,
   Item,
   Localized,
+  Part,
   Qty,
   Recipe,
   RecipeType,
@@ -28,6 +30,12 @@ export const ITEM_FILES: Record<string, string> = {
   TradeItems: 'trade',
   ProceduralProducts: 'procedural',
   Others: 'others',
+};
+
+/** Categories for ship-builder parts, pulled out of their upstream file's category. */
+export const PART_CATEGORIES: Record<Part['kind'], string> = {
+  starship: 'starshipParts',
+  corvette: 'corvetteParts',
 };
 
 /** Upstream recipe files -> recipe type (crafting recipes come from items' RequiredItems). */
@@ -72,6 +80,8 @@ interface OverrideItem {
   value?: number;
   currency?: string;
   source?: string;
+  /** Ship-builder slot, e.g. { kind: corvette, cls: corvette, slot: habitation }. */
+  part?: Part;
 }
 interface OverrideRecipe {
   id?: string;
@@ -179,9 +189,13 @@ export function buildCatalog(input: BuildInput): BuildOutput {
       const p = pt.get(x.Id);
       if (!p) warnings.push(`missing pt-br translation for ${x.Id}`);
       const icon = x.Icon ? x.Icon.replace(/\.\w+$/, '.webp') : null;
+      const part = starshipPartOf(x.Group ?? '', x.Description ?? '');
+      if (!part && /^(Fighter|Hauler|Explorer|Solar) Starship Component$/.test(x.Group ?? ''))
+        warnings.push(`unclassified starship part ${x.Id} (${x.Group})`);
+      const itemCat = part ? PART_CATEGORIES[part.kind] : cat;
       items.set(x.Id, {
         id: x.Id,
-        cat,
+        cat: itemCat,
         name: { en: x.Name, pt: p?.Name || x.Name },
         group: { en: x.Group ?? '', pt: p?.Group || x.Group || '' },
         icon: icon && input.hasIcon(icon) ? icon : null,
@@ -190,8 +204,10 @@ export function buildCatalog(input: BuildInput): BuildOutput {
         ...(x.MaxStackSize ? { stack: x.MaxStackSize } : {}),
         ...(x.Colour ? { colour: x.Colour } : {}),
         obtain: [],
+        ...(part ? { part } : {}),
       });
-      descriptions[cat]![x.Id] = {
+      descriptions[itemCat] ??= {};
+      descriptions[itemCat]![x.Id] = {
         text: { en: x.Description ?? '', pt: p?.Description || x.Description || '' },
       };
       const req = (x.RequiredItems ?? []).filter((r) => r.Id);
@@ -239,7 +255,10 @@ export function buildCatalog(input: BuildInput): BuildOutput {
         warnings.push(`override item ${o.id} already exists upstream; the override can be removed`);
         continue;
       }
-      const cat = o.cat ?? 'others';
+      if (o.part && !isValidPart(o.part)) {
+        throw new Error(`override item ${o.id}: unknown part ${JSON.stringify(o.part)}`);
+      }
+      const cat = o.cat ?? (o.part ? PART_CATEGORIES[o.part.kind] : 'others');
       items.set(o.id, {
         id: o.id,
         cat,
@@ -249,6 +268,7 @@ export function buildCatalog(input: BuildInput): BuildOutput {
         value: o.value ?? 0,
         currency: o.currency ?? 'Credits',
         obtain: [],
+        ...(o.part ? { part: o.part } : {}),
         manual: true,
       });
       descriptions[cat] ??= {};
@@ -312,7 +332,11 @@ export function buildCatalog(input: BuildInput): BuildOutput {
   }
 
   const categories = [
-    ...new Set([...Object.values(ITEM_FILES), ...[...items.values()].map((i) => i.cat)]),
+    ...new Set([
+      ...Object.values(ITEM_FILES),
+      ...Object.values(PART_CATEGORIES),
+      ...[...items.values()].map((i) => i.cat),
+    ]),
   ];
   return {
     catalog: {

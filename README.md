@@ -14,6 +14,13 @@ cooking._
 - **Usado em** — todas as receitas em que o item é ingrediente, agrupadas por tipo.
 - **Proporção E/S** em cada receita (ex.: `50 : 1`) e quantidade de cada ingrediente **por unidade**
   produzida; campo **Quantidade desejada** que escala os ingredientes (em execuções inteiras).
+- **Montar nave** (`#/builder`) — as 281 peças de nave (Caça, Transportador, Explorador, Solar)
+  classificadas por slot (cockpit/fuselagem, asas, motores, velas solares), com **prévia
+  esquemática** da nave montada usando os ícones oficiais, escolha aleatória, valor total e link
+  compartilhável. Cada peça mostra onde encaixa e um atalho "Montar com esta peça".
+- **Corvetas** — mesmos recursos, com os slots da árvore "Corvette Modules" do jogo. O AssistantNMS
+  ainda não publica os módulos de corveta; peças verificadas entram por
+  [`scripts/overrides/corvette.yaml`](scripts/overrides/corvette.yaml).
 - **Ícones oficiais** do jogo, tema claro/escuro, layout mobile.
 
 ## Dados

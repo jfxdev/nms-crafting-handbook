@@ -1,5 +1,6 @@
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <script lang="ts">
+  import BuilderView from './views/BuilderView.svelte';
   import Footer from './views/Footer.svelte';
   import Header from './views/Header.svelte';
   import ItemView from './views/ItemView.svelte';
@@ -25,7 +26,7 @@
   let lastPath = '';
   $effect(() => {
     const route = router.route;
-    const path = route.name === 'item' ? `item/${route.id}` : 'search';
+    const path = route.name === 'item' ? `item/${route.id}` : route.name;
     if (path !== lastPath) window.scrollTo(0, 0);
     lastPath = path;
   });
@@ -46,6 +47,8 @@
   <main class="mx-auto min-h-[60vh] max-w-[1100px] px-4 pb-8 pt-4" aria-live="polite">
     {#if router.route.name === 'item'}
       <ItemView {store} id={router.route.id} />
+    {:else if router.route.name === 'builder'}
+      <BuilderView {store} />
     {:else}
       <SearchView {store} {index} />
     {/if}
