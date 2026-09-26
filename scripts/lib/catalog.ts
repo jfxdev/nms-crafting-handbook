@@ -12,7 +12,7 @@ import type {
   Recipe,
   RecipeType,
   Source,
-} from '../../src/types.ts';
+} from '../../src/lib/types.ts';
 
 /** Upstream item files -> category key. Order defines the category order in the UI. */
 export const ITEM_FILES: Record<string, string> = {

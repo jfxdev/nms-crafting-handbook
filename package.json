@@ -9,23 +9,31 @@
     "dev": "vite",
     "build": "npm run typecheck && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "svelte-check --tsconfig ./tsconfig.json",
     "test": "vitest run",
     "format": "prettier --write .",
     "data:build": "tsx scripts/build-catalog.ts",
     "data:update": "tsx scripts/update-data.ts"
   },
   "dependencies": {
+    "@internationalized/date": "^3.12.4",
+    "bits-ui": "^2.19.3",
     "dompurify": "^3.4.15",
     "marked": "^18.0.14",
-    "minisearch": "^7.2.0"
+    "minisearch": "^7.2.0",
+    "svelte": "^5.57.1"
   },
   "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^26.6.2",
+    "@typescript/native": "npm:typescript@^7.0.2",
     "prettier": "^3.9.8",
     "sharp": "^0.35.4",
+    "svelte-check": "^4.7.6",
+    "tailwindcss": "^4.3.3",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2",
+    "typescript": "^6.0.3",
     "vite": "^8.3.0",
     "vitest": "^5.0.1",
     "yaml": "^2.9.1"

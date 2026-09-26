@@ -1,0 +1,185 @@
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+@import 'tailwindcss';
+
+:root {
+  --bg: #f5f6f8;
+  --surface: #ffffff;
+  --surface-2: #eef0f4;
+  --text: #1a1d23;
+  --muted: #5d6470;
+  --border: #d9dde4;
+  --accent: #b7780a;
+  --focus: #2f6fdb;
+  --craft: #2f6fdb;
+  --refine: #c2410c;
+  --cook: #15803d;
+  --none: #6b7280;
+  --manual: #9333ea;
+  --gt-stellar: #a16207;
+  --gt-technology: #0e7490;
+  --gt-special: #7e22ce;
+  --gt-tradeable: #15803d;
+  --gt-fuel: #b91c1c;
+  --gt-commodity: #c2410c;
+  --gt-earth: #92400e;
+  --gt-catalyst: #1d4ed8;
+  --gt-exotic: #be185d;
+  --radius: 10px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #0f131a;
+    --surface: #171c25;
+    --surface-2: #1f2632;
+    --text: #e6e9ef;
+    --muted: #9aa3b2;
+    --border: #2b3340;
+    --accent: #f5b83d;
+    --focus: #7aa7ff;
+    --craft: #7aa7ff;
+    --refine: #fb923c;
+    --cook: #4ade80;
+    --none: #9ca3af;
+    --manual: #c084fc;
+    --gt-stellar: #facc15;
+    --gt-technology: #22d3ee;
+    --gt-special: #c084fc;
+    --gt-tradeable: #4ade80;
+    --gt-fuel: #f87171;
+    --gt-commodity: #fb923c;
+    --gt-earth: #d6a26b;
+    --gt-catalyst: #60a5fa;
+    --gt-exotic: #f472b6;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --bg: #0f131a;
+  --surface: #171c25;
+  --surface-2: #1f2632;
+  --text: #e6e9ef;
+  --muted: #9aa3b2;
+  --border: #2b3340;
+  --accent: #f5b83d;
+  --focus: #7aa7ff;
+  --craft: #7aa7ff;
+  --refine: #fb923c;
+  --cook: #4ade80;
+  --none: #9ca3af;
+  --manual: #c084fc;
+  --gt-stellar: #facc15;
+  --gt-technology: #22d3ee;
+  --gt-special: #c084fc;
+  --gt-tradeable: #4ade80;
+  --gt-fuel: #f87171;
+  --gt-commodity: #fb923c;
+  --gt-earth: #d6a26b;
+  --gt-catalyst: #60a5fa;
+  --gt-exotic: #f472b6;
+  color-scheme: dark;
+}
+
+/* Expose the tokens above as Tailwind utilities (bg-surface, text-muted, border-border...). */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface-2);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-focus: var(--focus);
+  --color-craft: var(--craft);
+  --color-refine: var(--refine);
+  --color-cook: var(--cook);
+  --color-none: var(--none);
+  --color-manual: var(--manual);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font:
+    16px/1.5 system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+kbd {
+  font:
+    0.8em ui-monospace,
+    monospace;
+  padding: 1px 5px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface-2);
+}
+
+.prose :where(p) {
+  margin: 0 0 0.75em;
+}
+.prose :where(p:last-child) {
+  margin-bottom: 0;
+}
+
+.notes {
+  border-top: 1px dashed var(--border);
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+/* In-game text colours (rendered via {@html}, so plain CSS classes, not Tailwind utilities) */
+.gt-stellar {
+  color: var(--gt-stellar);
+}
+.gt-technology,
+.gt-technololy {
+  color: var(--gt-technology);
+}
+.gt-special,
+.gt-title,
+.gt-exped {
+  color: var(--gt-special);
+}
+.gt-tradeable {
+  color: var(--gt-tradeable);
+}
+.gt-fuel,
+.gt-warning,
+.gt-temperature {
+  color: var(--gt-fuel);
+}
+.gt-commodity {
+  color: var(--gt-commodity);
+}
+.gt-earth {
+  color: var(--gt-earth);
+}
+.gt-catalyst {
+  color: var(--gt-catalyst);
+}
+.gt-exotic {
+  color: var(--gt-exotic);
+}
+.gt-val-on {
+  font-weight: 600;
+}
