@@ -53,6 +53,23 @@
     ].filter(([, v]) => v > 0),
   );
 
+  /** Summed ingredients of the chosen parts that have a crafting recipe. */
+  const crafted = $derived(
+    chosen.flatMap(({ item }) =>
+      (store.catalog.producedBy[item.id] ?? [])
+        .map((rid) => store.recipes.get(rid))
+        .filter((r) => r?.type === 'craft')
+        .slice(0, 1),
+    ),
+  );
+  const materials = $derived(
+    [
+      ...crafted
+        .flatMap((r) => r!.inputs)
+        .reduce((m, q) => m.set(q.id, (m.get(q.id) ?? 0) + q.qty), new Map<string, number>()),
+    ].map(([id, qty]) => ({ item: store.items.get(id)!, qty })),
+  );
+
   let filters = $state<Record<string, string>>({});
   let copied = $state(false);
 
@@ -99,7 +116,10 @@
 </script>
 
 <Heading level={1} class="mb-1 mt-0">{t('builder')}</Heading>
-<p class="text-muted mt-0 max-w-[70ch] text-sm">{t('builderIntro')}</p>
+<p class="text-muted mt-0 max-w-[70ch] text-sm">
+  {t('builderIntro')}
+  {#if cls.kind === 'corvette' && total}{t('corvetteSource')}{/if}
+</p>
 
 <nav class="my-3 flex flex-wrap gap-1.5" aria-label={t('builder')}>
   {#each CLASSES as c (c.key)}
@@ -123,7 +143,7 @@
         </div>
       </div>
       {#if chosen.length}
-        <ul class="m-0 mt-2 grid list-none gap-1.5 p-0">
+        <ul class="m-0 mt-2 grid list-none grid-cols-1 gap-1.5 p-0">
           {#each chosen as { slot, item } (slot.key)}
             <li class="flex items-center gap-2">
               <Icon {item} size="sm" />
@@ -132,6 +152,25 @@
             </li>
           {/each}
         </ul>
+        {#if materials.length}
+          <h4 class="mb-1 mt-3 text-sm font-semibold">{t('materials')}</h4>
+          <ul class="m-0 flex list-none flex-wrap gap-1.5 p-0">
+            {#each materials as { item, qty } (item.id)}
+              <li>
+                <a
+                  href={itemHref(item.id)}
+                  class="border-border bg-surface2 inline-flex items-center gap-1.5 rounded-full border py-0.5 pl-0.5 pr-2 text-xs no-underline"
+                >
+                  <Icon {item} size="sm" />
+                  {fmt(qty)} × {loc(item.name)}
+                </a>
+              </li>
+            {/each}
+          </ul>
+          {#if crafted.length < chosen.length}
+            <p class="mb-0 mt-1"><Muted small>{t('materialsFor', { n: crafted.length })}</Muted></p>
+          {/if}
+        {/if}
         {#if totals.length}
           <p class="mb-0 mt-2 text-sm">
             <Muted>{t('totalValue')}:</Muted>

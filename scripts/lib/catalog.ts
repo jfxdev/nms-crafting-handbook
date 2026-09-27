@@ -3,7 +3,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse as parseYaml } from 'yaml';
-import { isValidPart, starshipPartOf } from '../../src/lib/parts.ts';
+import { corvetteSlotOf, isValidPart, starshipPartOf } from '../../src/lib/parts.ts';
 import type {
   Catalog,
   DescriptionShard,
@@ -96,8 +96,28 @@ export interface Overrides {
   recipes?: OverrideRecipe[];
 }
 
+/** Normalized corvette part (data/raw/nmse/corvette.json, written by scripts/update-corvette.ts). */
+export interface RawCorvettePart {
+  id: string;
+  /** Path under icons/ once converted (NMSE file name before that). */
+  icon: string | null;
+  /** NMSE CorvettePartCategory, e.g. "Cockpit", "Hull", "Gear, Engine". */
+  category: string;
+  name: Localized;
+  group: Localized;
+  description: Localized;
+  value: number;
+  currency: string;
+  stack?: number;
+  colour?: string;
+  /** Ingredients by English name; resolved to catalog ids at build time. */
+  requires: { name: string; qty: number }[];
+}
+
 export interface BuildInput {
   rawDir: string;
+  /** data/raw/nmse/corvette.json, when present. */
+  corvetteFile?: string;
   source: Omit<Source, 'stale'>;
   overrides: Overrides[];
   /** content/descriptions directory with <id>.<en|pt>.md files. */
@@ -245,6 +265,58 @@ export function buildCatalog(input: BuildInput): BuildOutput {
           source: 'assistantnms',
         }),
       );
+    }
+  }
+
+  // Corvette parts (NMSE), crafted at the Corvette Workshop when they have ingredients.
+  if (input.corvetteFile && existsSync(input.corvetteFile)) {
+    const byName = new Map<string, string>();
+    for (const item of items.values()) {
+      if (!item.part)
+        byName.set(
+          item.name.en.toLowerCase(),
+          byName.has(item.name.en.toLowerCase()) ? '' : item.id,
+        );
+    }
+    const cat = PART_CATEGORIES.corvette;
+    descriptions[cat] ??= {};
+    for (const x of readJson<RawCorvettePart[]>(input.corvetteFile)) {
+      if (items.has(x.id)) {
+        warnings.push(`duplicate corvette part id ${x.id}`);
+        continue;
+      }
+      const slot = corvetteSlotOf(x.category, x.group.en);
+      if (!slot) throw new Error(`corvette part ${x.id}: unknown category ${x.category}`);
+      items.set(x.id, {
+        id: x.id,
+        cat,
+        name: x.name,
+        group: x.group,
+        icon: x.icon && input.hasIcon(x.icon) ? x.icon : null,
+        value: x.value,
+        currency: x.currency,
+        ...(x.stack ? { stack: x.stack } : {}),
+        ...(x.colour ? { colour: x.colour } : {}),
+        obtain: [],
+        part: { kind: 'corvette', cls: 'corvette', slot },
+      });
+      descriptions[cat]![x.id] = { text: x.description };
+      if (x.requires.length) {
+        const inputs = x.requires.map((r) => {
+          const id = byName.get(r.name.toLowerCase());
+          if (!id) throw new Error(`corvette part ${x.id}: ingredient "${r.name}" not found`);
+          return { id, qty: r.qty };
+        });
+        recipes.push(
+          makeRecipe({
+            id: `craft-${x.id}`,
+            type: 'craft',
+            inputs,
+            output: { id: x.id, qty: 1 },
+            source: 'nmse',
+          }),
+        );
+      }
     }
   }
 

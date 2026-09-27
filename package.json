@@ -13,7 +13,8 @@
     "test": "vitest run",
     "format": "prettier --write .",
     "data:build": "tsx scripts/build-catalog.ts",
-    "data:update": "tsx scripts/update-data.ts"
+    "data:update": "tsx scripts/update-data.ts",
+    "data:update-corvette": "tsx scripts/update-corvette.ts"
   },
   "dependencies": {
     "@internationalized/date": "^3.12.4",

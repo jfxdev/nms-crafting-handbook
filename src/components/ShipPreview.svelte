@@ -54,7 +54,7 @@
         {@const item = selected[slot.key]}
         <span class="border-border bg-surface2 inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-xs">
           {#if item}<img src={iconUrl(item)} alt="" width="20" height="20" />{/if}
-          <span class="text-muted">{t('interiorParts')} · {loc(slot.label)}:</span>
+          <span class="text-muted">{loc(slot.label)}:</span>
           {item ? loc(item.name) : t('emptySlot')}
         </span>
       {/each}

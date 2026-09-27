@@ -10,7 +10,7 @@ import {
   type BuildOutput,
   type Overrides,
 } from '../scripts/lib/catalog.ts';
-import { isValidPart, starshipPartOf } from '../src/lib/parts.ts';
+import { corvetteSlotOf, isValidPart, starshipPartOf } from '../src/lib/parts.ts';
 
 const root = join(import.meta.dirname, '..');
 let out: BuildOutput;
@@ -18,6 +18,7 @@ let out: BuildOutput;
 beforeAll(() => {
   out = buildCatalog({
     rawDir: join(root, 'data/raw'),
+    corvetteFile: join(root, 'data/raw/nmse/corvette.json'),
     source: JSON.parse(readFileSync(join(root, 'data/SOURCE.json'), 'utf8')),
     overrides: loadOverrides(join(root, 'scripts/overrides')),
     notesDir: join(root, 'content/descriptions'),
@@ -111,7 +112,7 @@ describe('ship builder parts', () => {
     });
 
   it('classifies every upstream starship component into a class and slot', () => {
-    const parts = out.catalog.items.filter((i) => i.part);
+    const parts = out.catalog.items.filter((i) => i.part?.kind === 'starship');
     expect(parts.length).toBe(281);
     expect(parts.every((i) => i.cat === 'starshipParts' && isValidPart(i.part!))).toBe(true);
     expect(item('other461').part).toEqual({ kind: 'starship', cls: 'fighter', slot: 'cockpit' });
@@ -128,6 +129,31 @@ describe('ship builder parts', () => {
       'engines',
     );
     expect(starshipPartOf('Starship Subcomponent', desc)).toBeUndefined();
+  });
+
+  it('imports corvette parts from NMSE with slots and Corvette Workshop recipes', () => {
+    const parts = out.catalog.items.filter((i) => i.part?.kind === 'corvette');
+    expect(parts.length).toBeGreaterThan(150);
+    expect(parts.every((i) => i.cat === 'corvetteParts' && isValidPart(i.part!))).toBe(true);
+    expect(parts.filter((i) => !i.icon).map((i) => i.id)).toEqual(['B_LAN_B']);
+    expect(item('B_COK_A').name).toEqual({
+      en: 'Titan-class Cockpit',
+      pt: 'Cockpit da classe titã',
+    });
+    expect(item('B_GEN_3').part?.slot).toBe('reactors');
+    // Aeron Drive: 20 Pugneum + 1 Salvaged Glass + 5 Metal Plating.
+    expect(recipe('craft-B_WNG_P').inputs).toEqual([
+      { id: 'raw31', qty: 20 },
+      { id: 'cur80', qty: 1 },
+      { id: 'prod6', qty: 5 },
+    ]);
+    expect(out.catalog.usedIn['raw31']).toContain('craft-B_WNG_P');
+  });
+
+  it('maps corvette categories to slots', () => {
+    expect(corvetteSlotOf('Gear, Engine', 'Corvette Landing Gear')).toBe('gear');
+    expect(corvetteSlotOf('None', 'Corvette Reactor Module')).toBe('reactors');
+    expect(corvetteSlotOf('None', 'Something else')).toBeUndefined();
   });
 
   it('accepts corvette parts from overrides and rejects unknown slots', () => {

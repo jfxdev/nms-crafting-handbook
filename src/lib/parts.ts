@@ -84,31 +84,48 @@ export const CLASSES: ClassDef[] = [
     ],
   },
   {
-    // Slot names follow the game's "Corvette Modules" tech tree (AssistantNMS TechTree, en/pt-br).
+    // Slots group the game's corvette part categories (NMSE CorvettePartCategory, see corvetteSlotOf).
     key: 'corvette',
     kind: 'corvette',
     label: { en: 'Corvette', pt: 'Corveta' },
     slots: [
-      slot('cockpit', 'Cockpit', 'Cockpit', [{ x: 50, y: 14, size: 18 }]),
-      slot('habitation', 'Habitation Modules', 'Módulos de habitação', [
-        { x: 50, y: 35, size: 20 },
-        { x: 50, y: 55, size: 20 },
+      slot('cockpit', 'Cockpit', 'Cockpit', [{ x: 50, y: 13, size: 16 }]),
+      slot('habitation', 'Habitation & walkways', 'Habitação e passarelas', [
+        { x: 50, y: 32, size: 18 },
+        { x: 50, y: 50, size: 18 },
       ]),
-      slot('hull', 'Hull Plating', 'Chapeamento da fuselagem', [
-        { x: 31, y: 45, size: 14 },
-        { x: 69, y: 45, size: 14, flip: true },
+      slot('access', 'Landing bays', 'Áreas de pouso', [{ x: 50, y: 68, size: 13 }]),
+      slot('reactors', 'Reactors', 'Reatores', [{ x: 50, y: 84, size: 12 }]),
+      slot('engines', 'Engines & thrusters', 'Motores e impulsionadores', [
+        { x: 34, y: 88, size: 13 },
+        { x: 66, y: 88, size: 13, flip: true },
       ]),
-      slot('wings', 'Wings', 'Asas', [
-        { x: 13, y: 50, size: 20, back: true },
-        { x: 87, y: 50, size: 20, flip: true, back: true },
+      slot('gear', 'Landing gear', 'Trem de pouso', [
+        { x: 32, y: 74, size: 10 },
+        { x: 68, y: 74, size: 10, flip: true },
       ]),
-      slot('reactors', 'Reactors', 'Reatores', [
-        { x: 40, y: 86, size: 13 },
-        { x: 60, y: 86, size: 13, flip: true },
+      slot('wings', 'Flight stabilisers', 'Estabilizadores de voo', [
+        { x: 13, y: 48, size: 20, back: true },
+        { x: 87, y: 48, size: 20, flip: true, back: true },
       ]),
-      slot('additional', 'Additional Modules', 'Módulos adicionais', [{ x: 50, y: 72, size: 12 }]),
-      slot('furnishings', 'Furnishings and Utilities', 'Mobiliário e utilidades', []),
-      slot('interior', 'Internal Configuration', 'Configuração interna', []),
+      slot('hull', 'Hull plating', 'Chapeamento da fuselagem', [
+        { x: 32, y: 40, size: 12 },
+        { x: 68, y: 40, size: 12, flip: true },
+      ]),
+      slot('connectors', 'Structural supports', 'Suportes estruturais', [
+        { x: 32, y: 58, size: 11 },
+        { x: 68, y: 58, size: 11, flip: true },
+      ]),
+      slot('weapons', 'Weapons', 'Armamentos', [
+        { x: 30, y: 14, size: 11 },
+        { x: 70, y: 14, size: 11, flip: true },
+      ]),
+      slot('decor', 'Hull attachments', 'Acessórios de casco', [
+        { x: 20, y: 28, size: 10 },
+        { x: 80, y: 28, size: 10, flip: true },
+      ]),
+      slot('shields', 'Shields', 'Escudos', [{ x: 14, y: 74, size: 11 }]),
+      slot('interior', 'Interior', 'Interior', []),
     ],
   },
 ];
@@ -117,6 +134,36 @@ export const classDef = (key: string): ClassDef | undefined => CLASSES.find((c) 
 
 export const isValidPart = (p: Part): boolean =>
   !!classDef(p.cls)?.slots.some((s) => s.key === p.slot) && classDef(p.cls)!.kind === p.kind;
+
+const CORVETTE_CATEGORIES: Record<string, string> = {
+  Cockpit: 'cockpit',
+  Hab: 'habitation',
+  Access: 'access',
+  Reactor: 'reactors',
+  Engine: 'engines',
+  Gear: 'gear',
+  Wing: 'wings',
+  Hull: 'hull',
+  Connector: 'connectors',
+  Gun: 'weapons',
+  Decor: 'decor',
+  Shield: 'shields',
+  Interior: 'interior',
+};
+const CORVETTE_GROUPS: [RegExp, string][] = [
+  [/Access Module/, 'access'],
+  [/Reactor/, 'reactors'],
+  [/Weapon/, 'weapons'],
+];
+
+/**
+ * Corvette slot from the game's part category ("Gear, Engine" -> first one wins) or, for parts
+ * tagged "None", from their group ("Corvette Reactor Module" -> reactors).
+ */
+export function corvetteSlotOf(category: string, group: string): string | undefined {
+  const first = category.split(',')[0]!.trim();
+  return CORVETTE_CATEGORIES[first] ?? CORVETTE_GROUPS.find(([re]) => re.test(group))?.[1];
+}
 
 const SLOT_WORDS: [RegExp, string][] = [
   [/solar sails/, 'sails'],

@@ -11,6 +11,7 @@ import {
   existsSync,
   mkdirSync,
   mkdtempSync,
+  readdirSync,
   readFileSync,
   rmSync,
   writeFileSync,
@@ -83,7 +84,10 @@ try {
   const dirs = [...new Set([...icons].map((i) => dirname(i)))];
   git(tmp, 'sparse-checkout', 'add', ...dirs.map((d) => `/assets/images/${d}/`));
   const iconDir = join(root, 'public/icons');
-  rmSync(iconDir, { recursive: true, force: true });
+  // public/icons/corvette belongs to scripts/update-corvette.ts.
+  for (const d of existsSync(iconDir) ? readdirSync(iconDir) : []) {
+    if (d !== 'corvette') rmSync(join(iconDir, d), { recursive: true, force: true });
+  }
   let ok = 0;
   const missing: string[] = [];
   for (const icon of [...icons].sort()) {

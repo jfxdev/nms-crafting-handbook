@@ -1,0 +1,3886 @@
+[
+ {
+  "id": "B_COK_A",
+  "icon": "corvette/B_COK_A.webp",
+  "category": "Cockpit",
+  "name": {
+   "en": "Titan-class Cockpit",
+   "pt": "Cockpit da classe titã"
+  },
+  "group": {
+   "en": "Corvette Cockpit",
+   "pt": "Cockpit da corveta"
+  },
+  "description": {
+   "en": "The core command-and-control centre for a Corvette-class starship, housing both pilot and vital avionics systems.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Núcleo do centro de comando e controle para nave de classe corveta. Abriga o piloto e os sistemas aviônicos vitais.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1600000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_COK_B",
+  "icon": "corvette/B_COK_B.webp",
+  "category": "Cockpit",
+  "name": {
+   "en": "Ambassador-class Cockpit",
+   "pt": "Cockpit da classe embaixador"
+  },
+  "group": {
+   "en": "Corvette Cockpit",
+   "pt": "Cockpit da corveta"
+  },
+  "description": {
+   "en": "The core command-and-control centre for a Corvette-class starship, housing both pilot and vital avionics systems.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Núcleo do centro de comando e controle para nave de classe corveta. Abriga o piloto e os sistemas aviônicos vitais.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1600000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_COK_D",
+  "icon": "corvette/B_COK_D.webp",
+  "category": "Cockpit",
+  "name": {
+   "en": "Thunderbird-class Cockpit",
+   "pt": "Cockpit da classe pássaro-trovão"
+  },
+  "group": {
+   "en": "Corvette Cockpit",
+   "pt": "Cockpit da corveta"
+  },
+  "description": {
+   "en": "The core command-and-control centre for a Corvette-class starship, housing both pilot and vital avionics systems.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Núcleo do centro de comando e controle para nave de classe corveta. Abriga o piloto e os sistemas aviônicos vitais.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1600000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_HAB_A",
+  "icon": "corvette/B_HAB_A.webp",
+  "category": "Hab",
+  "name": {
+   "en": "Titan-class Hab",
+   "pt": "Unidade habitacional da classe titã"
+  },
+  "group": {
+   "en": "Corvette Habitation Module",
+   "pt": "Módulo de habitação para corveta"
+  },
+  "description": {
+   "en": "The main living area for a Corvette-class starship, providing space for passengers as well as installable utility modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Principal área de convivência para nave de classe corveta. Tem espaço para passageiros e para módulos utilitários instaláveis.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 680000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_HAB_B",
+  "icon": "corvette/B_HAB_B.webp",
+  "category": "Hab",
+  "name": {
+   "en": "Thunderbird-class Hab",
+   "pt": "Unidade habitacional da classe pássaro-trovão"
+  },
+  "group": {
+   "en": "Corvette Habitation Module",
+   "pt": "Módulo de habitação para corveta"
+  },
+  "description": {
+   "en": "The main living area for a Corvette-class starship, providing space for passengers as well as installable utility modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Principal área de convivência para nave de classe corveta. Tem espaço para passageiros e para módulos utilitários instaláveis.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 680000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_HAB_C",
+  "icon": "corvette/B_HAB_C.webp",
+  "category": "Hab",
+  "name": {
+   "en": "Ambassador-class Hab",
+   "pt": "Unidade habitacional da classe embaixador"
+  },
+  "group": {
+   "en": "Corvette Habitation Module",
+   "pt": "Módulo de habitação para corveta"
+  },
+  "description": {
+   "en": "The main living area for a Corvette-class starship, providing space for passengers as well as installable utility modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Principal área de convivência para nave de classe corveta. Tem espaço para passageiros e para módulos utilitários instaláveis.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 680000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_HAB1_A",
+  "icon": "corvette/B_HAB1_A.webp",
+  "category": "Hab",
+  "name": {
+   "en": "Titan-class Walkway",
+   "pt": "Passarela da classe titã"
+  },
+  "group": {
+   "en": "Corvette Access Module",
+   "pt": "Módulo de acesso de corveta"
+  },
+  "description": {
+   "en": "A compact-sized living area for a Corvette-class starship, providing space for passengers as well as installable utility modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Uma área de convivência compacta para uma nave de classe corveta. Tem espaço para passageiros e para módulos utilitários instaláveis.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_HAB1_B",
+  "icon": "corvette/B_HAB1_B.webp",
+  "category": "Hab",
+  "name": {
+   "en": "Thunderbird-class Walkway",
+   "pt": "Passarela da classe pássaro-trovão"
+  },
+  "group": {
+   "en": "Corvette Access Module",
+   "pt": "Módulo de acesso de corveta"
+  },
+  "description": {
+   "en": "A compact-sized living area for a Corvette-class starship, providing space for passengers as well as installable utility modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Uma área de convivência compacta para uma nave de classe corveta. Tem espaço para passageiros e para módulos utilitários instaláveis.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_HAB1_C",
+  "icon": "corvette/B_HAB1_C.webp",
+  "category": "Hab",
+  "name": {
+   "en": "Ambassador-class Walkway",
+   "pt": "Passarela da classe embaixador"
+  },
+  "group": {
+   "en": "Corvette Access Module",
+   "pt": "Módulo de acesso de corveta"
+  },
+  "description": {
+   "en": "A compact-sized living area for a Corvette-class starship, providing space for passengers as well as installable utility modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Uma área de convivência compacta para uma nave de classe corveta. Tem espaço para passageiros e para módulos utilitários instaláveis.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_LND_A",
+  "icon": "corvette/B_LND_A.webp",
+  "category": "Gear",
+  "name": {
+   "en": "Landing Gear",
+   "pt": "Trem de pouso"
+  },
+  "group": {
+   "en": "Corvette Landing Gear",
+   "pt": "Trem de pouso de corveta"
+  },
+  "description": {
+   "en": "An advanced landing system for a Corvette-class starship, compatible with both standard interstellar docks and planetary descents alike.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de pouso avançado para nave de classe corveta. É compatível com docas interestelares padrão e permite descidas planetárias.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 800000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_LND_B",
+  "icon": "corvette/B_LND_B.webp",
+  "category": "Gear",
+  "name": {
+   "en": "Mag-field Landing Thrusters",
+   "pt": "Impulsionadores de pouso em campo magnético"
+  },
+  "group": {
+   "en": "Corvette Landing Gear",
+   "pt": "Trem de pouso de corveta"
+  },
+  "description": {
+   "en": "An advanced landing system for a Corvette-class starship, compatible with both standard interstellar docks and planetary descents alike.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de pouso avançado para nave de classe corveta. É compatível com docas interestelares padrão e permite descidas planetárias.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 800000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_LND_C",
+  "icon": "corvette/B_LND_C.webp",
+  "category": "Gear",
+  "name": {
+   "en": "Hydraulic Legs",
+   "pt": "Pernas hidráulicas"
+  },
+  "group": {
+   "en": "Corvette Landing Gear",
+   "pt": "Trem de pouso de corveta"
+  },
+  "description": {
+   "en": "An advanced landing system for a Corvette-class starship, compatible with both standard interstellar docks and planetary descents alike.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de pouso avançado para nave de classe corveta. É compatível com docas interestelares padrão e permite descidas planetárias.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 800000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_LAN_B",
+  "icon": null,
+  "category": "Gear",
+  "name": {
+   "en": "Heavy Landing Gear",
+   "pt": "Trem de pouso pesado"
+  },
+  "group": {
+   "en": "Corvette Landing Gear",
+   "pt": "Trem de pouso de corveta"
+  },
+  "description": {
+   "en": "An advanced landing system for a Corvette-class starship. Capable of providing a stable planetary anchor on rough terrain, as well as interfacing with all standard interstellar docks.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de pouso avançado para uma nave de classe corveta. Capaz de fornecer uma âncora planetária estável em terrenos acidentados, além de interagir com todas as docas interestelares padrão.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 800000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_A",
+  "icon": "corvette/B_WNG_A.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Titan Heavy Booster",
+   "pt": "Incremento pesado de titã"
+  },
+  "group": {
+   "en": "Corvette Main Engine",
+   "pt": "Motor principal de corveta"
+  },
+  "description": {
+   "en": "A main engine for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Motor principal para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_B",
+  "icon": "corvette/B_WNG_B.webp",
+  "category": "Gear, Engine",
+  "name": {
+   "en": "Thunderbird Landing Thrusters",
+   "pt": "Impulsionadores de pouso pássaro-trovão"
+  },
+  "group": {
+   "en": "Corvette Landing Gear",
+   "pt": "Trem de pouso de corveta"
+  },
+  "description": {
+   "en": "An advanced landing system for a Corvette-class starship, compatible with both standard interstellar docks and planetary descents alike.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de pouso avançado para nave de classe corveta. É compatível com docas interestelares padrão e permite descidas planetárias.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_C",
+  "icon": "corvette/B_WNG_C.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Ambassador Heavy Booster",
+   "pt": "Incremento pesado de embaixador"
+  },
+  "group": {
+   "en": "Corvette Main Engine",
+   "pt": "Motor principal de corveta"
+  },
+  "description": {
+   "en": "A main engine for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Motor principal para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_D",
+  "icon": "corvette/B_WNG_D.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Thunderbird Heavy Booster",
+   "pt": "Incremento pesado de pássaro-trovão"
+  },
+  "group": {
+   "en": "Corvette Main Engine",
+   "pt": "Motor principal de corveta"
+  },
+  "description": {
+   "en": "A main engine for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Motor principal para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_E",
+  "icon": "corvette/B_WNG_E.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Osprey Wing Module",
+   "pt": "Módulo de asa rapineira"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_F",
+  "icon": "corvette/B_WNG_F.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Ambassador Sublight Thruster",
+   "pt": "Impulsionador de subvelocidade embaixador"
+  },
+  "group": {
+   "en": "Corvette Main Engine",
+   "pt": "Motor principal de corveta"
+  },
+  "description": {
+   "en": "A main engine for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Motor principal para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_G",
+  "icon": "corvette/B_WNG_G.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Titan Wing Module",
+   "pt": "Módulo de asa de titã"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_H",
+  "icon": "corvette/B_WNG_H.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Titan Sublight Thruster",
+   "pt": "Impulsionador de subvelocidade titã"
+  },
+  "group": {
+   "en": "Corvette Light Thruster",
+   "pt": "Impulsionador leve de corveta"
+  },
+  "description": {
+   "en": "A secondary thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador secundário para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_I",
+  "icon": "corvette/B_WNG_I.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Arcadia S-foil",
+   "pt": "Lâmina S de arcadia"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_J",
+  "icon": "corvette/B_WNG_J.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Arcadia Wing Module",
+   "pt": "Módulo de asa de arcadia"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_K",
+  "icon": "corvette/B_WNG_K.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Arcadia Aerofoil",
+   "pt": "Aerofólio de arcadia"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_L",
+  "icon": "corvette/B_WNG_L.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Arcadia Sublight Thruster",
+   "pt": "Impulsionador de subvelocidade arcadia"
+  },
+  "group": {
+   "en": "Corvette Light Thruster",
+   "pt": "Impulsionador leve de corveta"
+  },
+  "description": {
+   "en": "A secondary thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador secundário para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_M",
+  "icon": "corvette/B_WNG_M.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Ambassador Wing Module",
+   "pt": "Módulo de ala de embaixador"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_N",
+  "icon": "corvette/B_WNG_N.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Arcadia Heavy Booster",
+   "pt": "Incremento pesado de arcadia"
+  },
+  "group": {
+   "en": "Corvette Main Engine",
+   "pt": "Motor principal de corveta"
+  },
+  "description": {
+   "en": "A main engine for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Motor principal para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_O_0",
+  "icon": "corvette/B_WNG_O_0.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Rockhopper Wing Module",
+   "pt": "Módulo de asa rockhopper"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_O_1",
+  "icon": "corvette/B_WNG_O_1.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Rockhopper Propeller Module",
+   "pt": "Módulo de hélice Rockhopper"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_O_2",
+  "icon": "corvette/B_WNG_O_2.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Rockhopper Fin Module",
+   "pt": "Módulo de estabilizador Rockhopper"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "A wing module for a Corvette-class starship, stabilising the vessel during atmospheric flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Módulo de asa para nave de classe corveta. Estabiliza a nave durante o voo atmosférico.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WNG_P",
+  "icon": "corvette/B_WNG_P.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Aeron Drive",
+   "pt": "Propulsor de Aeron"
+  },
+  "group": {
+   "en": "Corvette Main Engine",
+   "pt": "Motor principal de corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis main engine can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEste motor principal pode ser usado para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 20
+   },
+   {
+    "name": "Salvaged Glass",
+    "qty": 1
+   },
+   {
+    "name": "Metal Plating",
+    "qty": 5
+   }
+  ]
+ },
+ {
+  "id": "B_WNG_Q",
+  "icon": "corvette/B_WNG_Q.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Wings of Aeron",
+   "pt": "Asas de Aeron"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis wing module can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEste módulo de asa pode ser usado para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 15
+   },
+   {
+    "name": "Salvaged Glass",
+    "qty": 1
+   },
+   {
+    "name": "Metal Plating",
+    "qty": 2
+   }
+  ]
+ },
+ {
+  "id": "B_WNG_R",
+  "icon": "corvette/B_WNG_R.webp",
+  "category": "Wing",
+  "name": {
+   "en": "Aeron Blade",
+   "pt": "Lâmina de Aeron"
+  },
+  "group": {
+   "en": "Corvette Flight Stabliser",
+   "pt": "Estabilizador de voo de corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis wing module can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEste módulo de asa pode ser usado para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1400000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 15
+   },
+   {
+    "name": "Platinum",
+    "qty": 30
+   },
+   {
+    "name": "Metal Plating",
+    "qty": 2
+   }
+  ]
+ },
+ {
+  "id": "B_TUR_A",
+  "icon": "corvette/B_TUR_A.webp",
+  "category": "Gun",
+  "name": {
+   "en": "Photon Cannon Array",
+   "pt": "Conjunto de canhão de fótons"
+  },
+  "group": {
+   "en": "Corvette Weapon System",
+   "pt": "Sistema de armamento de corveta"
+  },
+  "description": {
+   "en": "A dedicated weapon platform for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Plataforma de armas específica para uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1200000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TUR_B",
+  "icon": "corvette/B_TUR_B.webp",
+  "category": "Gun",
+  "name": {
+   "en": "Deadeye Cannon",
+   "pt": "Canhão Olho Morto"
+  },
+  "group": {
+   "en": "Corvette Weapon System",
+   "pt": "Sistema de armamento de corveta"
+  },
+  "description": {
+   "en": "This unique Corvette ordnance module features a single rifled barrel, engineered for precision in deep-space combat.",
+   "pt": "Este módulo de artilharia da corveta apresenta um único cano estriado, projetado para precisão em combate espacial."
+  },
+  "value": 1200000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Solar Mirror",
+    "qty": 2
+   },
+   {
+    "name": "Starshield Battery",
+    "qty": 1
+   },
+   {
+    "name": "Metal Plating",
+    "qty": 5
+   }
+  ]
+ },
+ {
+  "id": "B_TUR_C",
+  "icon": "corvette/B_TUR_C.webp",
+  "category": "Gun",
+  "name": {
+   "en": "Phase Beam Array",
+   "pt": "Conjunto de feixe de fases"
+  },
+  "group": {
+   "en": "Corvette Weapon System",
+   "pt": "Sistema de armamento de corveta"
+  },
+  "description": {
+   "en": "A dedicated weapon platform for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Plataforma de armas específica para uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1200000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TUR_D",
+  "icon": "corvette/B_TUR_D.webp",
+  "category": "Gun",
+  "name": {
+   "en": "Cyclotron Defence Cannon",
+   "pt": "Canhão de defesa cíclotron"
+  },
+  "group": {
+   "en": "Corvette Weapon System",
+   "pt": "Sistema de armamento de corveta"
+  },
+  "description": {
+   "en": "A dedicated weapon platform for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Plataforma de armas específica para uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1200000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TUR_E",
+  "icon": "corvette/B_TUR_E.webp",
+  "category": "Gun",
+  "name": {
+   "en": "Infra-knife Platform",
+   "pt": "Plataforma de infracorte"
+  },
+  "group": {
+   "en": "Corvette Weapon System",
+   "pt": "Sistema de armamento de corveta"
+  },
+  "description": {
+   "en": "A dedicated weapon platform for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Plataforma de armas específica para uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1200000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_SHL_A",
+  "icon": "corvette/B_SHL_A.webp",
+  "category": "Shield",
+  "name": {
+   "en": "Deflector Shield",
+   "pt": "Escudo defletor"
+  },
+  "group": {
+   "en": "Corvette Shield Generator",
+   "pt": "Gerador de escudo de nave corveta"
+  },
+  "description": {
+   "en": "A shield generator system for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de gerador de escudos para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_SHL_B",
+  "icon": "corvette/B_SHL_B.webp",
+  "category": "Shield",
+  "name": {
+   "en": "Ion Barrier",
+   "pt": "Barreira de Íons"
+  },
+  "group": {
+   "en": "Corvette Shield Generator",
+   "pt": "Gerador de escudo de nave corveta"
+  },
+  "description": {
+   "en": "A shield generator system for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de gerador de escudos para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_SHL_C",
+  "icon": "corvette/B_SHL_C.webp",
+  "category": "Shield",
+  "name": {
+   "en": "High-energy Shield",
+   "pt": "Escudo de alta energia"
+  },
+  "group": {
+   "en": "Corvette Shield Generator",
+   "pt": "Gerador de escudo de nave corveta"
+  },
+  "description": {
+   "en": "A shield generator system for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de gerador de escudos para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_SHL_D",
+  "icon": "corvette/B_SHL_D.webp",
+  "category": "Shield",
+  "name": {
+   "en": "Defence Field",
+   "pt": "Campo de defesa"
+  },
+  "group": {
+   "en": "Corvette Shield Generator",
+   "pt": "Gerador de escudo de nave corveta"
+  },
+  "description": {
+   "en": "A shield generator system for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Sistema de gerador de escudos para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_SHL_E",
+  "icon": "corvette/B_SHL_E.webp",
+  "category": "Shield",
+  "name": {
+   "en": "Aeron Powershield",
+   "pt": "Escudo de poder de Aeron"
+  },
+  "group": {
+   "en": "Corvette Shield Generator",
+   "pt": "Gerador de escudo de nave corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis shield generator can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEste gerador de escudo pode ser usado para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 25
+   },
+   {
+    "name": "Solar Mirror",
+    "qty": 1
+   },
+   {
+    "name": "Starshield Battery",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_TRU_A",
+  "icon": "corvette/B_TRU_A.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Twin Echo Jets",
+   "pt": "Jatos duplos eco"
+  },
+  "group": {
+   "en": "Corvette Rear Thruster",
+   "pt": "Impulsionador traseiro de corveta"
+  },
+  "description": {
+   "en": "A rear thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador traseiro para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1000000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TRU_B",
+  "icon": "corvette/B_TRU_B.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Twin Dynamo Jets",
+   "pt": "Jatos duplos dínamo"
+  },
+  "group": {
+   "en": "Corvette Rear Thruster",
+   "pt": "Impulsionador traseiro de corveta"
+  },
+  "description": {
+   "en": "A rear thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador traseiro para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1000000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TRU_C",
+  "icon": "corvette/B_TRU_C.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Kineostream Thruster",
+   "pt": "Impulsionador dinamotransmissor"
+  },
+  "group": {
+   "en": "Corvette Rear Thruster",
+   "pt": "Impulsionador traseiro de corveta"
+  },
+  "description": {
+   "en": "A rear thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador traseiro para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1000000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TRU_D",
+  "icon": "corvette/B_TRU_D.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Pyrodrive Booster",
+   "pt": "Incremento de piropropulsor"
+  },
+  "group": {
+   "en": "Corvette Rear Thruster",
+   "pt": "Impulsionador traseiro de corveta"
+  },
+  "description": {
+   "en": "A rear thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador traseiro para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1000000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TRU_E",
+  "icon": "corvette/B_TRU_E.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Widebody Thruster",
+   "pt": "Impulsionador amplo"
+  },
+  "group": {
+   "en": "Corvette Rear Thruster",
+   "pt": "Impulsionador traseiro de corveta"
+  },
+  "description": {
+   "en": "A rear thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador traseiro para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1000000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TRU_F",
+  "icon": "corvette/B_TRU_F.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Twin Sublight Jets",
+   "pt": "Jatos de subvelocidade duplos"
+  },
+  "group": {
+   "en": "Corvette Rear Thruster",
+   "pt": "Impulsionador traseiro de corveta"
+  },
+  "description": {
+   "en": "A rear thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador traseiro para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1000000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TRU_G",
+  "icon": "corvette/B_TRU_G.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Firebox Thruster",
+   "pt": "Impulsionador de fornalha"
+  },
+  "group": {
+   "en": "Corvette Rear Thruster",
+   "pt": "Impulsionador traseiro de corveta"
+  },
+  "description": {
+   "en": "A rear thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador traseiro para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1000000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_TRU_H",
+  "icon": "corvette/B_TRU_H.webp",
+  "category": "Engine",
+  "name": {
+   "en": "Longshore Thruster",
+   "pt": "Impulsionador beira-mar"
+  },
+  "group": {
+   "en": "Corvette Rear Thruster",
+   "pt": "Impulsionador traseiro de corveta"
+  },
+  "description": {
+   "en": "A rear thruster for a Corvette-class starship, delivering propulsion during atmospheric and deep-space flight.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Impulsionador traseiro para nave de classe corveta. Proporciona propulsão durante voos atmosféricos e no espaço profundo.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1000000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_ALK_A",
+  "icon": "corvette/B_ALK_A.webp",
+  "category": "Access",
+  "name": {
+   "en": "Titan-class Landing Bay",
+   "pt": "Área de pouso da classe titã"
+  },
+  "group": {
+   "en": "Corvette Access Module",
+   "pt": "Módulo de acesso de corveta"
+  },
+  "description": {
+   "en": "A passenger and pilot accessway for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Via de acesso destinada a passageiros e pilotos para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 800000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_ALK_B",
+  "icon": "corvette/B_ALK_B.webp",
+  "category": "Access",
+  "name": {
+   "en": "Ambassador-class Landing Bay",
+   "pt": "Área de pouso da classe embaixador"
+  },
+  "group": {
+   "en": "Corvette Access Module",
+   "pt": "Módulo de acesso de corveta"
+  },
+  "description": {
+   "en": "A passenger and pilot accessway for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Via de acesso destinada a passageiros e pilotos para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 800000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_ALK_C",
+  "icon": "corvette/B_ALK_C.webp",
+  "category": "Access",
+  "name": {
+   "en": "Thunderbird-class Landing Bay",
+   "pt": "Área de pouso da classe pássaro-trovão"
+  },
+  "group": {
+   "en": "Corvette Access Module",
+   "pt": "Módulo de acesso de corveta"
+  },
+  "description": {
+   "en": "A passenger and pilot accessway for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Via de acesso destinada a passageiros e pilotos para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 800000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_ALK_D",
+  "icon": "corvette/B_ALK_D.webp",
+  "category": "None",
+  "name": {
+   "en": "Internal Landing Bay",
+   "pt": "Área de pouso interna"
+  },
+  "group": {
+   "en": "Corvette Access Module",
+   "pt": "Módulo de acesso de corveta"
+  },
+  "description": {
+   "en": "A passenger and pilot accessway for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Via de acesso destinada a passageiros e pilotos para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 800000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_WALL_TOIL0",
+  "icon": "corvette/B_WALL_TOIL0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Waste Disposal Unit",
+   "pt": "Unidade de descarte de dejetos"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A vital if unglamourous component of any long-distance starship. Particularly recommended for multi-crew vessels.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Um componente vital, embora pouco glamoroso, de qualquer nave de longa distância. Recomendado principalmente para naves com múltiplas tripulações.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 20
+   },
+   {
+    "name": "Faecium",
+    "qty": 5
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_KITC0",
+  "icon": "corvette/B_WALL_KITC0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Nutrition Unit",
+   "pt": "Unidade de nutrição"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A funtional suite of nutrient-processing tools, allowing for the creation of 'meals' while travelling through deep-space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Conjunto funcional de ferramentas de processamento de nutrientes, permitindo a criação de 'refeições' durante viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Gold",
+    "qty": 50
+   },
+   {
+    "name": "Hermetic Seal",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_BUNK0",
+  "icon": "corvette/B_WALL_BUNK0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Crew Berth",
+   "pt": "Acomodação da tripulação"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "This single-occupancy sleeping unit contains all the comfort an interstellar passenger could ever require.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Unidade de sono individual que oferece todo o conforto necessário para um passageiro interestelar.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 35
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG0",
+  "icon": "corvette/B_WALL_CARG0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 0",
+   "pt": "Porta-carga 0"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG1",
+  "icon": "corvette/B_WALL_CARG1.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 1",
+   "pt": "Porta-carga 1"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG2",
+  "icon": "corvette/B_WALL_CARG2.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 2",
+   "pt": "Porta-carga 2"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG3",
+  "icon": "corvette/B_WALL_CARG3.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 3",
+   "pt": "Porta-carga 3"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG4",
+  "icon": "corvette/B_WALL_CARG4.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 4",
+   "pt": "Porta-carga 4"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG5",
+  "icon": "corvette/B_WALL_CARG5.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 5",
+   "pt": "Porta-carga 5"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG6",
+  "icon": "corvette/B_WALL_CARG6.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 6",
+   "pt": "Porta-carga 6"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG7",
+  "icon": "corvette/B_WALL_CARG7.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 7",
+   "pt": "Porta-carga 7"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG8",
+  "icon": "corvette/B_WALL_CARG8.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 8",
+   "pt": "Porta-carga 8"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_CARG9",
+  "icon": "corvette/B_WALL_CARG9.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Cargo Rack 9",
+   "pt": "Porta-carga 9"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A combination storage device and easy-access panel. This unit allows access to Storage Containers while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Dispositivo utilizado para armazenamento e como painel de fácil acesso. A unidade permite acesso a contêineres em viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_MED0",
+  "icon": "corvette/B_WALL_MED0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Medi-pod",
+   "pt": "Módulo médico"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "This installable module provides a range of medical services, including automatic wound suturing, infection control, and AI-driven viral containment features. Note: pod must be wired to airlocks for full functionality to be enabled.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Módulo instalável com diversos serviços médicos à disposição, incluindo sutura automática de feridas, controle de infecções e recursos de contenção viral controlados por IA. Observação: o módulo deve ser conectado às eclusas de ar para ativar todas as funcionalidades.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Gold",
+    "qty": 50
+   },
+   {
+    "name": "Hermetic Seal",
+    "qty": 3
+   },
+   {
+    "name": "Amino Chamber",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_TECH0",
+  "icon": "corvette/B_WALL_TECH0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Refiner Unit",
+   "pt": "Unidade refinadora"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A powerful refiner, this in-ship module allows three different substances to be processed into more powerful and more advanced materials.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Poderoso módulo refinador de bordo que possibilita transformar três substâncias diferentes em materiais mais avançados e eficientes.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Platinum",
+    "qty": 20
+   },
+   {
+    "name": "Hydraulic Wiring",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_TECH1",
+  "icon": "corvette/B_WALL_TECH1.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Mission Radar",
+   "pt": "Radar de missões"
+  },
+  "group": {
+   "en": "Mission Location System",
+   "pt": "Sistema de localização de missões"
+  },
+  "description": {
+   "en": "An access panel for the Mission Radar, which allows Travellers to search the local system for mission opportunities.\n\nListings posted on the mission radar are challenging, and may require a corvette's full crew.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Painel de acesso ao radar de missões. Permite que os viajantes procurem missões no sistema local.\n\nAs missões listadas no radar são desafiadoras e podem exigir a mobilização de toda a tripulação da corveta.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Gold",
+    "qty": 40
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 1
+   },
+   {
+    "name": "Ion Battery",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_WIND0",
+  "icon": "corvette/B_WALL_WIND0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Panelled Window",
+   "pt": "Janela com painel"
+  },
+  "group": {
+   "en": "Corvette Window Module",
+   "pt": "Módulo de janela da corveta"
+  },
+  "description": {
+   "en": "This hydraulically sealed window enables a view of deep space from the safety of the starship interior.\n\nThis module is installed into the wall of a Corvette Hab.",
+   "pt": "Janela com vedação hidráulica que possibilita observar o espaço profundo com segurança do interior da nave.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Glass",
+    "qty": 1
+   },
+   {
+    "name": "Silver",
+    "qty": 30
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_WIND1",
+  "icon": "corvette/B_WALL_WIND1.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Seamless Window",
+   "pt": "Janela contínua"
+  },
+  "group": {
+   "en": "Corvette Window Module",
+   "pt": "Módulo de janela da corveta"
+  },
+  "description": {
+   "en": "This hydraulically sealed window enables a view of deep space from the safety of the starship interior.\n\nThis module is installed into the wall of a Corvette Hab.",
+   "pt": "Janela com vedação hidráulica que possibilita observar o espaço profundo com segurança do interior da nave.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Glass",
+    "qty": 1
+   },
+   {
+    "name": "Silver",
+    "qty": 30
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_WIND2",
+  "icon": "corvette/B_WALL_WIND2.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Rounded Window",
+   "pt": "Janela arredondada"
+  },
+  "group": {
+   "en": "Corvette Window Module",
+   "pt": "Módulo de janela da corveta"
+  },
+  "description": {
+   "en": "This hydraulically sealed window enables a view of deep space from the safety of the starship interior.\n\nThis module is installed into the wall of a Corvette Hab.",
+   "pt": "Janela com vedação hidráulica que possibilita observar o espaço profundo com segurança do interior da nave.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Glass",
+    "qty": 1
+   },
+   {
+    "name": "Silver",
+    "qty": 30
+   }
+  ]
+ },
+ {
+  "id": "B_WALL_PLAN0",
+  "icon": "corvette/B_WALL_PLAN0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Living Wall",
+   "pt": "Parede viva"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A specialist hydroponics unit, allowing cultivation of planetary crops while travelling through deep space.\n\nThis module is installed along the entire wall of a Corvette Hab.",
+   "pt": "Unidade hidropônica especializada que permite o cultivo de culturas planetárias durante viagens pelo espaço profundo.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Silicate Powder",
+    "qty": 10
+   },
+   {
+    "name": "Carbon",
+    "qty": 10
+   }
+  ]
+ },
+ {
+  "id": "B_DOOR0",
+  "icon": "corvette/B_DOOR0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Internal Door",
+   "pt": "Porta interna"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A heavy-duty doorway, allowing access between habitation modules. These doors will be automatically sealed in the event of a hull breach.\n\nThis module is installed into the wall of a Corvette Hab.",
+   "pt": "Porta reforçada que possibilita a passagem entre os módulos de habitação. A porta se fecha automaticamente em caso de avaria na fuselagem.\n\nEste módulo é instalado ao longo da parede de uma unidade habitacional de corveta."
+  },
+  "value": 75000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Ferrite Dust",
+    "qty": 50
+   }
+  ]
+ },
+ {
+  "id": "B_STR_A_NE",
+  "icon": "corvette/B_STR_A_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Argonaut Aerofoil",
+   "pt": "Aerofólio de argonauta"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_A_N",
+  "icon": "corvette/B_STR_A_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Argonaut Cowling",
+   "pt": "Carenagem de argonauta"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_B_NE",
+  "icon": "corvette/B_STR_B_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Supercruise Aerofoil",
+   "pt": "Aerofólio de supercruzeiro"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_B_N",
+  "icon": "corvette/B_STR_B_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Supercruise Cowling",
+   "pt": "Carenagem de supercruzeiro"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_C_NE",
+  "icon": "corvette/B_STR_C_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Argonaut Winglet",
+   "pt": "Apêndice de asa de argonauta"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_C_N",
+  "icon": "corvette/B_STR_C_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Hardframe Cowling",
+   "pt": "Carenagem de megassentinela"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_D_NE",
+  "icon": "corvette/B_STR_D_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Turbine Aerofoil",
+   "pt": "Aerofólio de turbina"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_D_N",
+  "icon": "corvette/B_STR_D_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Turbine Cowling",
+   "pt": "Carenagem de turbina"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_E_NE",
+  "icon": "corvette/B_STR_E_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Hardframe Diffuser",
+   "pt": "Difusor de megassentinela"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_E_N",
+  "icon": "corvette/B_STR_E_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Argonaut Fuel Cover",
+   "pt": "Tampa de combustível de argonauta"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_F_NE",
+  "icon": "corvette/B_STR_F_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Vesper Diffuser",
+   "pt": "Difusor de Vésper"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_F_N",
+  "icon": "corvette/B_STR_F_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Longshore Cowling",
+   "pt": "Carenagem beira-mar"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_G_NE",
+  "icon": "corvette/B_STR_G_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Fuel Pod Cover",
+   "pt": "Tampa do módulo de combustível"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_G_N",
+  "icon": "corvette/B_STR_G_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Argonaut Hydraulics",
+   "pt": "Hidráulica argonauta"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_H_NE",
+  "icon": "corvette/B_STR_H_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Engine Cover",
+   "pt": "Tampa do motor"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_H_N",
+  "icon": "corvette/B_STR_H_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Firebox Cowling",
+   "pt": "Carenagem de fornalha"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_I_NE",
+  "icon": "corvette/B_STR_I_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Speedbird Dome Section",
+   "pt": "Seção com domo de pássaro veloz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_I_N",
+  "icon": "corvette/B_STR_I_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Radiator Casing",
+   "pt": "Invólucro do radiador"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_J_NE",
+  "icon": "corvette/B_STR_J_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Speedbird Nacelle",
+   "pt": "Nacela de pássaro veloz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_J_N",
+  "icon": "corvette/B_STR_J_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Speedbird Diffuser",
+   "pt": "Difusor de pássaro veloz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_K_NE",
+  "icon": "corvette/B_STR_K_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Arcadia Blade",
+   "pt": "Lâmina de Arcadia"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_K_N",
+  "icon": "corvette/B_STR_K_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Albatross Sidepod",
+   "pt": "Cápsula de Albatroz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_L_NE",
+  "icon": "corvette/B_STR_L_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Arcadia Stabiliser",
+   "pt": "Estabilizador de arcadia"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_L_N",
+  "icon": "corvette/B_STR_L_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Albatross Cargo Tank",
+   "pt": "Tanque de carga de Albatroz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_M_NE",
+  "icon": "corvette/B_STR_M_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Vesper Aerofoil",
+   "pt": "Aerofólio de vésper"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_M_N",
+  "icon": "corvette/B_STR_M_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Vesper Cowling",
+   "pt": "Carenagem de Vésper"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_N_NE",
+  "icon": "corvette/B_STR_N_NE.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Thermal Grille Cap",
+   "pt": "Tampa da grelha térmica"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_N_N",
+  "icon": "corvette/B_STR_N_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Thermal Grille",
+   "pt": "Grelha Térmica"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_O_N",
+  "icon": "corvette/B_STR_O_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Firebox Fairing",
+   "pt": "Coifa de fornalha"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_P_N",
+  "icon": "corvette/B_STR_P_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Swept Casing",
+   "pt": "Invólucro longo"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_Q_N",
+  "icon": "corvette/B_STR_Q_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Domed Casing",
+   "pt": "Invólucro em cúpula"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_R_N",
+  "icon": "corvette/B_STR_R_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Speedbird Fairing",
+   "pt": "Coifa de pássaro veloz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_S_N",
+  "icon": "corvette/B_STR_S_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Speedbird Cowling",
+   "pt": "Carenagem de pássaro veloz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_T_NETB",
+  "icon": "corvette/B_STR_T_NETB.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Fuel Pod Cover Rim",
+   "pt": "Aro da tampa do módulo de combustível"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_U_NETB",
+  "icon": "corvette/B_STR_U_NETB.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Engine Cover Rim",
+   "pt": "Aro da tampa do motor"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_V_NETB",
+  "icon": "corvette/B_STR_V_NETB.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Hardframe Diffuser Rim",
+   "pt": "Aro do difusor de megassentinela"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_W_NETB",
+  "icon": "corvette/B_STR_W_NETB.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Vesper Diffuser Rim",
+   "pt": "Aro do difusor de Vésper"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_X_NETB",
+  "icon": "corvette/B_STR_X_NETB.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Speedbird Dome Rim",
+   "pt": "Aro do domo de pássaro veloz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_Y_NETB",
+  "icon": "corvette/B_STR_Y_NETB.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Speedbird Nacelle Rim",
+   "pt": "Aro da nacela de pássaro veloz"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_Z_NETB",
+  "icon": "corvette/B_STR_Z_NETB.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Arcadia Stabiliser Rim",
+   "pt": "Aro do estabilizador de Arcadia"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_STR_AA_N",
+  "icon": "corvette/B_STR_AA_N.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Aeron Winglet",
+   "pt": "Apêndice de asa de Aeron"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis piece of hull cowling can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEsta peça de carenagem da fuselagem pode ser usada para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 150000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 20
+   },
+   {
+    "name": "Platinum",
+    "qty": 5
+   }
+  ]
+ },
+ {
+  "id": "B_STAIRS0",
+  "icon": "corvette/B_STAIRS0.webp",
+  "category": "Interior",
+  "name": {
+   "en": "Internal Stairway",
+   "pt": "Escada interna"
+  },
+  "group": {
+   "en": "Corvette Interior Furnishing",
+   "pt": "Mobiliário interno da corveta"
+  },
+  "description": {
+   "en": "A vertical accessway, allowing traversal between floors of the corvette-class starship.\n\nThis module is installed into the centre of a Corvette Hab.",
+   "pt": "Via de acesso vertical para nave de classe corveta. Permite deslocar-se entre os andares da nave.\n\nEste módulo é instalado no centro de uma unidade habitacional de corveta."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Ferrite Dust",
+    "qty": 50
+   }
+  ]
+ },
+ {
+  "id": "B_GEN_0",
+  "icon": "corvette/B_GEN_0.webp",
+  "category": "Reactor",
+  "name": {
+   "en": "Zenith-class Reactor",
+   "pt": "Reator de classe zênite"
+  },
+  "group": {
+   "en": "Corvette Reactor Module",
+   "pt": "Módulo de reator de corveta"
+  },
+  "description": {
+   "en": "A powerful reactor core for a Corvette-class starship, designed to power and enhance critical systems.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Poderoso núcleo de reator para nave de classe corveta. Projetado para fornecer energia e aprimorar sistemas críticos.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_GEN_1",
+  "icon": "corvette/B_GEN_1.webp",
+  "category": "Reactor",
+  "name": {
+   "en": "Medusa-class Reactor",
+   "pt": "Reator de classe medusa"
+  },
+  "group": {
+   "en": "Corvette Reactor Module",
+   "pt": "Módulo de reator de corveta"
+  },
+  "description": {
+   "en": "A powerful reactor core for a Corvette-class starship, designed to power and enhance critical systems.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Poderoso núcleo de reator para nave de classe corveta. Projetado para fornecer energia e aprimorar sistemas críticos.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_GEN_2",
+  "icon": "corvette/B_GEN_2.webp",
+  "category": "Reactor",
+  "name": {
+   "en": "Azimuth-class Reactor",
+   "pt": "Reator de classe azimute"
+  },
+  "group": {
+   "en": "Corvette Reactor Module",
+   "pt": "Módulo de reator de corveta"
+  },
+  "description": {
+   "en": "A powerful reactor core for a Corvette-class starship, designed to power and enhance critical systems.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Poderoso núcleo de reator para nave de classe corveta. Projetado para fornecer energia e aprimorar sistemas críticos.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_GEN_3",
+  "icon": "corvette/B_GEN_3.webp",
+  "category": "Reactor",
+  "name": {
+   "en": "Ceto-class Reactor",
+   "pt": "Reator de classe ceto"
+  },
+  "group": {
+   "en": "Corvette Reactor Module",
+   "pt": "Módulo de reator de corveta"
+  },
+  "description": {
+   "en": "A powerful reactor core for a Corvette-class starship, designed to power and enhance critical systems.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Poderoso núcleo de reator para nave de classe corveta. Projetado para fornecer energia e aprimorar sistemas críticos.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1750000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_L_0",
+  "icon": "corvette/B_CON_L_0.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Girder Array",
+   "pt": "Conjunto de viga"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_L_1",
+  "icon": "corvette/B_CON_L_1.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Light Scaffold",
+   "pt": "Andaime leve"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_L_2",
+  "icon": "corvette/B_CON_L_2.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Heavy Scaffold",
+   "pt": "Andaime pesado"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_L_3",
+  "icon": "corvette/B_CON_L_3.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Hull Linkage",
+   "pt": "Articulação de fuselagem"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_4",
+  "icon": "corvette/B_CON_4.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Cell Joint",
+   "pt": "Junta de célula"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_5",
+  "icon": "corvette/B_CON_5.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Industrial Joint",
+   "pt": "Junta industrial"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_6",
+  "icon": "corvette/B_CON_6.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Heavy Linkage",
+   "pt": "Articulação pesada"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_7",
+  "icon": "corvette/B_CON_7.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Relay Joint",
+   "pt": "Junta de relé"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_8",
+  "icon": "corvette/B_CON_8.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Bolted Joint",
+   "pt": "Junta parafusada"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_9",
+  "icon": "corvette/B_CON_9.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Ducting Joint",
+   "pt": "Junta de duto"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_10",
+  "icon": "corvette/B_CON_10.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Ballast Tank",
+   "pt": "Tanque de lastro"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_11",
+  "icon": "corvette/B_CON_11.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Coolant Distributor",
+   "pt": "Distribuidor de líquido refrigerante"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_12",
+  "icon": "corvette/B_CON_12.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Fuel Cell",
+   "pt": "Célula de combustível"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_13",
+  "icon": "corvette/B_CON_13.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Plasma Core",
+   "pt": "Núcleo de Plasma"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_14",
+  "icon": "corvette/B_CON_14.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Shielded Joint",
+   "pt": "Junta escudada"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON_15",
+  "icon": "corvette/B_CON_15.webp",
+  "category": "Connector",
+  "name": {
+   "en": "High-energy Ducting",
+   "pt": "Dutos de alta energia"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A piece of structural support for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de suporte estrutural para nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON2_0",
+  "icon": "corvette/B_CON2_0.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Reinforced Hull Link",
+   "pt": "Conector de fuselagem reforçado"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A heavy-duty structural support for a Corvette-class starship, designed for connecting larger modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Suporte estrutural de alta resistência para nave de classe corveta. Projetado para conectar módulos maiores.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON2_1",
+  "icon": "corvette/B_CON2_1.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Industrial Cargo Link",
+   "pt": "Conector de carga industrial"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A heavy-duty structural support for a Corvette-class starship, designed for connecting larger modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Suporte estrutural de alta resistência para nave de classe corveta. Projetado para conectar módulos maiores.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON2_2",
+  "icon": "corvette/B_CON2_2.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Oversized Canister Link",
+   "pt": "Conector de lata imenso"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A heavy-duty structural support for a Corvette-class starship, designed for connecting larger modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Suporte estrutural de alta resistência para nave de classe corveta. Projetado para conectar módulos maiores.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_CON2_3",
+  "icon": "corvette/B_CON2_3.webp",
+  "category": "Connector",
+  "name": {
+   "en": "Structural Gantry Link",
+   "pt": "Conector de pórtico estrutural"
+  },
+  "group": {
+   "en": "Corvette Structural Support",
+   "pt": "Suporte estrutural de corveta"
+  },
+  "description": {
+   "en": "A heavy-duty structural support for a Corvette-class starship, designed for connecting larger modules.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Suporte estrutural de alta resistência para nave de classe corveta. Projetado para conectar módulos maiores.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 350000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_A",
+  "icon": "corvette/B_DECO_A.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Antenna",
+   "pt": "Antena"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_B",
+  "icon": "corvette/B_DECO_B.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Cargo Link",
+   "pt": "Conector de carga"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_C",
+  "icon": "corvette/B_DECO_C.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Small Vent",
+   "pt": "Exaustor pequeno"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_D",
+  "icon": "corvette/B_DECO_D.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Cargo Capsule",
+   "pt": "Cápsula de carga"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_E",
+  "icon": "corvette/B_DECO_E.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Cargo Box",
+   "pt": "Caixa de carga"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_F",
+  "icon": "corvette/B_DECO_F.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Cargo Pod",
+   "pt": "Módulo de carga"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_G",
+  "icon": "corvette/B_DECO_G.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Cargo Sphere",
+   "pt": "Esfera de carga"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_H",
+  "icon": "corvette/B_DECO_H.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Satellite Receiver",
+   "pt": "Receptor de satélite"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_I",
+  "icon": "corvette/B_DECO_I.webp",
+  "category": "Gun",
+  "name": {
+   "en": "Torpedo Launcher",
+   "pt": "Lança-torpedos"
+  },
+  "group": {
+   "en": "Corvette Weapon System",
+   "pt": "Sistema de armamento de corveta"
+  },
+  "description": {
+   "en": "A dedicated weapon platform for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Plataforma de armas específica para uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 1200000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_J",
+  "icon": "corvette/B_DECO_J.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Air Purifier",
+   "pt": "Purificador de ar"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_K",
+  "icon": "corvette/B_DECO_K.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Fuel Rods",
+   "pt": "Barras de combustível"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_L",
+  "icon": "corvette/B_DECO_L.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Radiator Vent",
+   "pt": "Exaustão do radiador"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_M",
+  "icon": "corvette/B_DECO_M.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Ducting Outlet",
+   "pt": "Terminal de duto"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_N_0",
+  "icon": "corvette/B_DECO_N_0.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Streamlined Trim Cap",
+   "pt": "Tampa de acabamento simplificado"
+  },
+  "group": {
+   "en": "Corvette External Plating",
+   "pt": "Chapeamento externo de corveta"
+  },
+  "description": {
+   "en": "A piece of hull cowling for a Corvette-class starship, designed to streamline and protect core ship components.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Peça de carenagem de fuselagem para nave de classe corveta. Projetada para otimizar o perfil aerodinâmico e proteger os componentes principais da nave.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_O",
+  "icon": "corvette/B_DECO_O.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Streamlined Trim",
+   "pt": "Acabamento simplificado"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_P",
+  "icon": "corvette/B_DECO_P.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Radar Dome",
+   "pt": "Cúpula de radar"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "An exterior attachment for a Corvette-class starship.\n\nAssemble a corvette at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "Acessório externo de uma nave de classe corveta.\n\nMonte uma corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": []
+ },
+ {
+  "id": "B_DECO_Q_0",
+  "icon": "corvette/B_DECO_Q_0.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Aeron Diffuser",
+   "pt": "Difusor de Aeron"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis piece of hull cowling can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEsta peça de carenagem da fuselagem pode ser usada para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 25
+   },
+   {
+    "name": "Platinum",
+    "qty": 60
+   },
+   {
+    "name": "Metal Plating",
+    "qty": 4
+   }
+  ]
+ },
+ {
+  "id": "B_DECO_R",
+  "icon": "corvette/B_DECO_R.webp",
+  "category": "Hull",
+  "name": {
+   "en": "Aeron Cowling",
+   "pt": "Carenagem de Aeron"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis piece of hull cowling can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEsta peça de carenagem da fuselagem pode ser usada para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 10
+   },
+   {
+    "name": "Silver",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "B_DECO_S",
+  "icon": "corvette/B_DECO_S.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Aeron Pillar",
+   "pt": "Pilar de Aeron"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis piece of hull cowling can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEsta peça de carenagem da fuselagem pode ser usada para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 20
+   },
+   {
+    "name": "Platinum",
+    "qty": 40
+   },
+   {
+    "name": "Metal Plating",
+    "qty": 3
+   }
+  ]
+ },
+ {
+  "id": "B_DECO_T",
+  "icon": "corvette/B_DECO_T.webp",
+  "category": "Decor",
+  "name": {
+   "en": "Aeron Pyramid",
+   "pt": "Pirâmide de Aeron"
+  },
+  "group": {
+   "en": "Corvette Hull Attachment",
+   "pt": "Acessório de fuselagem de corveta"
+  },
+  "description": {
+   "en": "The geometry of this component is ancient and unmistakable, shaped by the crimson heartbeat of the universe itself.\n\nThis piece of hull cowling can be used to assemble a Corvette-class starship at the dedicated Corvette Workshop aboard any Space Station.",
+   "pt": "A geometria deste componente é antiga e inconfundível, moldada pela pulsação carmesim do próprio universo.\n\nEsta peça de carenagem da fuselagem pode ser usada para montar uma nave da classe corveta na oficina de corveta a bordo de qualquer estação espacial."
+  },
+  "value": 175000,
+  "currency": "Credits",
+  "stack": 5,
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pugneum",
+    "qty": 10
+   },
+   {
+    "name": "Silver",
+    "qty": 20
+   }
+  ]
+ }
+]

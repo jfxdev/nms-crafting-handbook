@@ -18,18 +18,22 @@ cooking._
   classificadas por slot (cockpit/fuselagem, asas, motores, velas solares), com **prévia
   esquemática** da nave montada usando os ícones oficiais, escolha aleatória, valor total e link
   compartilhável. Cada peça mostra onde encaixa e um atalho "Montar com esta peça".
-- **Corvetas** — mesmos recursos, com os slots da árvore "Corvette Modules" do jogo. O AssistantNMS
-  ainda não publica os módulos de corveta; peças verificadas entram por
+- **Corvetas** — 162 peças (cockpits, habitação, reatores, motores, trem de pouso, estabilizadores,
+  chapeamento, armas, escudos, interior...) com nomes oficiais em PT-BR, ícones e as 32 receitas
+  da Oficina de corveta. No "Montar nave", a montagem soma os **materiais para fabricar**. Dados do
+  [NMSE](https://github.com/vectorcmdr/NMSE) (NMS 7.03), já que o AssistantNMS ainda não publica
+  corvetas; peças faltantes podem entrar por
   [`scripts/overrides/corvette.yaml`](scripts/overrides/corvette.yaml).
 - **Ícones oficiais** do jogo, tema claro/escuro, layout mobile.
 
 ## Dados
 
-|                     |                                                                                                      |
-| ------------------- | ---------------------------------------------------------------------------------------------------- |
-| Versão alvo do jogo | **NMS 7.01 — COSMOS** (lançado em 09/09/2026)                                                        |
-| Fonte               | [AssistantNMS/App](https://github.com/AssistantNMS/App) — ver [`data/SOURCE.json`](data/SOURCE.json) |
-| Conteúdo            | 3.544 itens · 1.395 receitas de crafting · 357 de refinaria · 1.323 de culinária · 2.718 ícones      |
+|                     |                                                                                                                        |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Versão alvo do jogo | **NMS 7.01 — COSMOS** (lançado em 09/09/2026)                                                                          |
+| Fonte               | [AssistantNMS/App](https://github.com/AssistantNMS/App) — ver [`data/SOURCE.json`](data/SOURCE.json)                   |
+| Corvetas            | [NMSE](https://github.com/vectorcmdr/NMSE) (AGPL-3.0) — ver [`data/raw/nmse/SOURCE.json`](data/raw/nmse/SOURCE.json)   |
+| Conteúdo            | 3.706 itens (162 peças de corveta) · 1.427 receitas de crafting · 357 de refinaria · 1.323 de culinária · 2.879 ícones |
 
 > ⚠️ Os dados mais recentes publicados pelo AssistantNMS são de **08/10/2025**, anteriores ao
 > COSMOS. Itens adicionados depois disso podem estar faltando — o site mostra esse aviso. Itens
@@ -41,6 +45,7 @@ Os dados **ficam versionados no repositório**: `dev`, `build` e o CI não acess
 ```
 data/raw/{en,pt-br}/   JSON bruto do AssistantNMS (cópia única, atual)
 data/SOURCE.json       commit de origem + versão do jogo
+data/raw/nmse/         peças de corveta normalizadas do NMSE (+ SOURCE.json)
 public/data/           catálogo gerado (catalog.json + desc/<categoria>.json)
 public/icons/          ícones oficiais convertidos para .webp
 scripts/overrides/     itens/receitas manuais (YAML)
@@ -62,6 +67,7 @@ npm run data:build   # regenera public/data a partir de data/raw (offline)
 ```bash
 npm run data:update -- --ref main --game-version 7.01 --game-name COSMOS --game-date 2026-09-09
 git diff --stat      # revise itens novos/removidos antes de commitar
+npm run data:update-corvette   # peças de corveta + ícones a partir do NMSE
 ```
 
 Baixa só os JSON `en`/`pt-br` e os ícones usados (clone esparso), converte os ícones, grava

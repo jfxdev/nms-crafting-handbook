@@ -62,7 +62,6 @@ const STRINGS = {
     en: 'Schematic preview composed from the official part icons (not a 3D render).',
     pt: 'Prévia esquemática composta com os ícones oficiais das peças (não é um render 3D).',
   },
-  interiorParts: { en: 'Interior', pt: 'Interior' },
   emptySlot: { en: 'Empty', pt: 'Vazio' },
   parts: { en: '{n} parts', pt: '{n} peças' },
   filterParts: { en: 'Filter parts…', pt: 'Filtrar peças…' },
@@ -77,12 +76,21 @@ const STRINGS = {
   fitsIn: { en: 'Fits: {cls} · {slot}', pt: 'Encaixa em: {cls} · {slot}' },
   buildWith: { en: 'Build with this part', pt: 'Montar com esta peça' },
   corvetteNoData: {
-    en: 'Corvette modules are not in the source data yet (AssistantNMS has not published them). Verified parts can be added in scripts/overrides/corvette.yaml.',
-    pt: 'Os módulos de corveta ainda não estão nos dados da fonte (o AssistantNMS não os publicou). Peças verificadas podem ser adicionadas em scripts/overrides/corvette.yaml.',
+    en: 'No corvette parts in the catalog. Run npm run data:update-corvette or add verified parts in scripts/overrides/corvette.yaml.',
+    pt: 'Nenhuma peça de corveta no catálogo. Rode npm run data:update-corvette ou adicione peças verificadas em scripts/overrides/corvette.yaml.',
+  },
+  corvetteSource: {
+    en: 'Corvette parts: game data extracted by NMSE (AGPL-3.0). Build them at the Corvette Workshop aboard any space station.',
+    pt: 'Peças de corveta: dados do jogo extraídos pelo NMSE (AGPL-3.0). A montagem é feita na Oficina de corveta de qualquer estação espacial.',
+  },
+  materials: { en: 'Materials to craft', pt: 'Materiais para fabricar' },
+  materialsFor: {
+    en: 'Only {n} of the chosen parts have a crafting recipe; the others are rewards or bought.',
+    pt: 'Só {n} das peças escolhidas têm receita; as demais são recompensas ou compradas.',
   },
   footer: {
-    en: 'Unofficial fan project, not affiliated with Hello Games. Code and data: GPL-3.0-or-later. Item data from AssistantNMS (GPL-3.0). No Man’s Sky, item names and icons © Hello Games.',
-    pt: 'Projeto de fã não oficial, sem afiliação com a Hello Games. Código e dados: GPL-3.0-or-later. Dados dos itens do AssistantNMS (GPL-3.0). No Man’s Sky, nomes e ícones dos itens © Hello Games.',
+    en: 'Unofficial fan project, not affiliated with Hello Games. Code and data: GPL-3.0-or-later. Item data from AssistantNMS (GPL-3.0); corvette parts from NMSE (AGPL-3.0). No Man’s Sky, item names and icons © Hello Games.',
+    pt: 'Projeto de fã não oficial, sem afiliação com a Hello Games. Código e dados: GPL-3.0-or-later. Dados dos itens do AssistantNMS (GPL-3.0); peças de corveta do NMSE (AGPL-3.0). No Man’s Sky, nomes e ícones dos itens © Hello Games.',
   },
 } satisfies Record<string, Localized>;
 

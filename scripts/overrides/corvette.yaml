@@ -1,19 +1,11 @@
-# Peças de Corveta para o "Montar nave" (#/builder?c=corvette).
+# Peças de Corveta adicionadas à mão para o "Montar nave" (#/builder?c=corvette).
 #
-# O AssistantNMS ainda não publica os módulos de corveta: a árvore "Corvette Modules"
-# (TechTree.lang.json) existe, mas está vazia. Preencha APENAS com dados verificados no jogo
-# (nome EN + nome oficial PT-BR, custo e receita, se houver). Quando a fonte passar a trazer as
-# peças, `npm run data:build` avisa quais overrides já existem upstream e podem sair daqui.
+# As peças vêm do NMSE (data/raw/nmse/corvette.json, `npm run data:update-corvette`). Use este
+# arquivo só para peças que ainda faltarem lá, com dados verificados no jogo (nome EN + nome oficial
+# PT-BR, custo e receita, se houver).
 #
-# Slots (part.slot), na ordem da árvore do jogo:
-#   cockpit      Cockpit
-#   habitation   Habitation Modules        / Módulos de habitação
-#   hull         Hull Plating              / Chapeamento da fuselagem
-#   wings        Wings                     / Asas
-#   reactors     Reactors                  / Reatores
-#   additional   Additional Modules        / Módulos adicionais
-#   furnishings  Furnishings and Utilities / Mobiliário e utilidades
-#   interior     Internal Configuration    / Configuração interna
+# Slots (part.slot): cockpit, habitation, access, reactors, engines, gear, wings, hull,
+#   connectors, weapons, decor, shields, interior (ver src/lib/parts.ts).
 #
 # Formato:
 # items:

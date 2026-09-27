@@ -53,7 +53,7 @@ export interface Recipe {
   ratio: string;
   /** Input quantity needed per single unit of output. */
   perUnit: Qty[];
-  source: 'assistantnms' | 'override';
+  source: 'assistantnms' | 'nmse' | 'override';
 }
 
 export interface Source {
