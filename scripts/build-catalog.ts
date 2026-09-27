@@ -12,6 +12,7 @@ export function run(): void {
   const { catalog, descriptions, warnings } = buildCatalog({
     rawDir: join(root, 'data/raw'),
     corvetteFile: join(root, 'data/raw/nmse/corvette.json'),
+    freighterFile: join(root, 'data/raw/nmse/freighter.json'),
     source,
     overrides: loadOverrides(join(root, 'scripts/overrides')),
     notesDir: join(root, 'content/descriptions'),

@@ -17,15 +17,17 @@ origem está registrado em [`data/SOURCE.json`](data/SOURCE.json).
 Item/recipe data and icons come from AssistantNMS (GPL-3.0); the exact source commit is recorded in
 `data/SOURCE.json`.
 
-### Peças de corveta / Corvette parts
+### Corvetas e cargueiro / Corvette parts and freighter modules
 
-As peças de corveta (`data/raw/nmse/`, `public/icons/corvette/`) vêm do **NMSE — No Man's Save
+As peças de corveta e os módulos de cargueiro (`data/raw/nmse/`, `public/icons/corvette/`,
+`public/icons/freighter/`) vêm do **NMSE — No Man's Save
 Editor** — <https://github.com/vectorcmdr/NMSE> — licenciado sob **AGPL-3.0**, que extrai os dados
-dos arquivos do jogo. O AssistantNMS ainda não publica esses módulos. Esses arquivos seguem os termos
+dos arquivos do jogo. O AssistantNMS ainda não publica os módulos de corveta nem as salas mais
+novas do cargueiro. Esses arquivos seguem os termos
 da AGPL-3.0 (compatível com a GPL-3.0, seção 13); o commit de origem está em
 [`data/raw/nmse/SOURCE.json`](data/raw/nmse/SOURCE.json).
 
-Corvette parts come from NMSE (AGPL-3.0); those files remain under AGPL-3.0 terms, and the exact
+Corvette parts and freighter modules come from NMSE (AGPL-3.0); those files remain under AGPL-3.0 terms, and the exact
 source commit is recorded in `data/raw/nmse/SOURCE.json`.
 
 ## Hello Games

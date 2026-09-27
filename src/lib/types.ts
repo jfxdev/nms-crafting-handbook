@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 // Shared shape of the generated catalog (public/data/catalog.json).
+import type { FreighterKind } from './freighter.ts';
 
 export type Lang = 'en' | 'pt';
 export type Localized = Record<Lang, string>;
@@ -37,6 +38,8 @@ export interface Item {
   obtain: RecipeType[];
   /** Set for starship/corvette components usable in the ship builder. */
   part?: Part;
+  /** Set for freighter base modules usable in the freighter planner. */
+  freighter?: FreighterKind;
   /** Added by hand from scripts/overrides (not present in the upstream data). */
   manual?: boolean;
 }

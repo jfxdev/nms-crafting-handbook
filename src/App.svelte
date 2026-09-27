@@ -2,6 +2,7 @@
 <script lang="ts">
   import BuilderView from './views/BuilderView.svelte';
   import Footer from './views/Footer.svelte';
+  import FreighterView from './views/FreighterView.svelte';
   import Header from './views/Header.svelte';
   import ItemView from './views/ItemView.svelte';
   import SearchView from './views/SearchView.svelte';
@@ -49,6 +50,8 @@
       <ItemView {store} id={router.route.id} />
     {:else if router.route.name === 'builder'}
       <BuilderView {store} />
+    {:else if router.route.name === 'freighter'}
+      <FreighterView {store} />
     {:else}
       <SearchView {store} {index} />
     {/if}

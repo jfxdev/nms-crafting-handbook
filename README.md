@@ -24,6 +24,12 @@ cooking._
   [NMSE](https://github.com/vectorcmdr/NMSE) (NMS 7.03), já que o AssistantNMS ainda não publica
   corvetas; peças faltantes podem entrar por
   [`scripts/overrides/corvette.yaml`](scripts/overrides/corvette.yaml).
+- **Planejar cargueiro** (`#/freighter`) — mapa visto de cima (algo que o jogo não oferece) para
+  desenhar a base do cargueiro antes de construir: 41 módulos atuais (corredores, salas, escadas,
+  exterior) com nomes oficiais em PT-BR; clique ou arraste para colocar, vários decks ligados por
+  escadas, corredores que assumem o formato certo (reto, L, T, cruzamento) como no jogo, alerta de
+  módulos sem ligação com a entrada, contagem de módulos e **materiais totais**. O plano fica salvo
+  no navegador e pode ser compartilhado por link ou exportado/importado em JSON.
 - **Ícones oficiais** do jogo, tema claro/escuro, layout mobile.
 
 ## Dados
@@ -67,7 +73,7 @@ npm run data:build   # regenera public/data a partir de data/raw (offline)
 ```bash
 npm run data:update -- --ref main --game-version 7.01 --game-name COSMOS --game-date 2026-09-09
 git diff --stat      # revise itens novos/removidos antes de commitar
-npm run data:update-corvette   # peças de corveta + ícones a partir do NMSE
+npm run data:update-nmse       # corvetas + módulos de cargueiro + ícones a partir do NMSE
 ```
 
 Baixa só os JSON `en`/`pt-br` e os ícones usados (clone esparso), converte os ícones, grava

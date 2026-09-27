@@ -56,6 +56,14 @@
         <span aria-hidden="true">🚀</span>
         <span class="sr-only sm:not-sr-only">{t('builder')}</span>
       </a>
+      <a
+        href={'#/freighter'}
+        aria-current={router.route.name === 'freighter' ? 'page' : undefined}
+        class="border-border bg-surface2 text-text hover:border-accent aria-[current=page]:border-accent flex shrink-0 items-center gap-1.5 rounded-full border px-3 py-1 text-sm no-underline"
+      >
+        <span aria-hidden="true">🛸</span>
+        <span class="sr-only sm:not-sr-only">{t('freighter')}</span>
+      </a>
       <Modal
         title={t('aboutData')}
         closeLabel={t('close')}

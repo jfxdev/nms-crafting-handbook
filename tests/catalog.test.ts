@@ -19,6 +19,7 @@ beforeAll(() => {
   out = buildCatalog({
     rawDir: join(root, 'data/raw'),
     corvetteFile: join(root, 'data/raw/nmse/corvette.json'),
+    freighterFile: join(root, 'data/raw/nmse/freighter.json'),
     source: JSON.parse(readFileSync(join(root, 'data/SOURCE.json'), 'utf8')),
     overrides: loadOverrides(join(root, 'scripts/overrides')),
     notesDir: join(root, 'content/descriptions'),
@@ -169,5 +170,30 @@ describe('ship builder parts', () => {
     expect(() =>
       build([{ items: [{ ...corvette, part: { ...corvette.part, slot: 'x' } }] }]),
     ).toThrow(/unknown part/);
+  });
+});
+
+describe('freighter modules', () => {
+  const modules = () => out.catalog.items.filter((i) => i.freighter);
+
+  it('links upstream modules and fills their pt-br names from the game strings', () => {
+    expect(item('build882').freighter).toBe('room');
+    expect(item('build882').name).toEqual({ en: 'Refiner Room', pt: 'Sala do refinador' });
+    expect(item('build887').name).toEqual({ en: 'Storage Room 0', pt: 'Sala de armazenamento 0' });
+  });
+
+  it('adds modules missing upstream, with recipes, and none of the legacy parts', () => {
+    expect(item('FRE_CORR_A').freighter).toBe('corridor');
+    expect(recipe('craft-FRE_CORR_A').inputs).toEqual([
+      { id: 'raw32', qty: 30 },
+      { id: 'raw7', qty: 5 },
+    ]);
+    expect(item('build2').freighter).toBeUndefined();
+    const all = modules();
+    expect(all.length).toBeGreaterThanOrEqual(40);
+    expect(new Set(all.map((i) => i.freighter))).toEqual(
+      new Set(['corridor', 'room', 'stairs', 'exterior']),
+    );
+    expect(all.every((i) => i.icon && out.catalog.producedBy[i.id])).toBe(true);
   });
 });

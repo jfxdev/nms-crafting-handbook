@@ -3,6 +3,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse as parseYaml } from 'yaml';
+import { KIND_ORDER, type FreighterKind } from '../../src/lib/freighter.ts';
 import { corvetteSlotOf, isValidPart, starshipPartOf } from '../../src/lib/parts.ts';
 import type {
   Catalog,
@@ -96,12 +97,12 @@ export interface Overrides {
   recipes?: OverrideRecipe[];
 }
 
-/** Normalized corvette part (data/raw/nmse/corvette.json, written by scripts/update-corvette.ts). */
-export interface RawCorvettePart {
+/** Normalized NMSE part (data/raw/nmse/{corvette,freighter}.json, see scripts/update-nmse.ts). */
+export interface RawNmsePart {
   id: string;
   /** Path under icons/ once converted (NMSE file name before that). */
   icon: string | null;
-  /** NMSE CorvettePartCategory, e.g. "Cockpit", "Hull", "Gear, Engine". */
+  /** Corvette: NMSE CorvettePartCategory ("Cockpit", "Gear, Engine"...). Freighter: planner kind. */
   category: string;
   name: Localized;
   group: Localized;
@@ -118,6 +119,8 @@ export interface BuildInput {
   rawDir: string;
   /** data/raw/nmse/corvette.json, when present. */
   corvetteFile?: string;
+  /** data/raw/nmse/freighter.json, when present. */
+  freighterFile?: string;
   source: Omit<Source, 'stale'>;
   overrides: Overrides[];
   /** content/descriptions directory with <id>.<en|pt>.md files. */
@@ -268,55 +271,90 @@ export function buildCatalog(input: BuildInput): BuildOutput {
     }
   }
 
-  // Corvette parts (NMSE), crafted at the Corvette Workshop when they have ingredients.
-  if (input.corvetteFile && existsSync(input.corvetteFile)) {
-    const byName = new Map<string, string>();
-    for (const item of items.values()) {
-      if (!item.part)
-        byName.set(
-          item.name.en.toLowerCase(),
-          byName.has(item.name.en.toLowerCase()) ? '' : item.id,
-        );
+  // NMSE: corvette parts and freighter base modules, crafted when they list ingredients.
+  const byName = new Map<string, string>();
+  for (const item of items.values()) {
+    const n = item.name.en.toLowerCase();
+    byName.set(n, byName.has(n) ? '' : item.id);
+  }
+  const inputsOf = (x: RawNmsePart): Qty[] =>
+    x.requires.map((r) => {
+      const id = byName.get(r.name.toLowerCase());
+      if (!id) throw new Error(`NMSE part ${x.id}: ingredient "${r.name}" not found`);
+      return { id, qty: r.qty };
+    });
+  const addNmse = (x: RawNmsePart, cat: string, extra: Partial<Item>) => {
+    if (items.has(x.id)) {
+      warnings.push(`duplicate NMSE part id ${x.id}`);
+      return;
     }
-    const cat = PART_CATEGORIES.corvette;
+    items.set(x.id, {
+      id: x.id,
+      cat,
+      name: x.name,
+      group: x.group,
+      icon: x.icon && input.hasIcon(x.icon) ? x.icon : null,
+      value: x.value,
+      currency: x.currency,
+      ...(x.stack ? { stack: x.stack } : {}),
+      ...(x.colour ? { colour: x.colour } : {}),
+      obtain: [],
+      ...extra,
+    });
     descriptions[cat] ??= {};
-    for (const x of readJson<RawCorvettePart[]>(input.corvetteFile)) {
-      if (items.has(x.id)) {
-        warnings.push(`duplicate corvette part id ${x.id}`);
-        continue;
-      }
+    descriptions[cat]![x.id] = { text: x.description };
+    if (x.requires.length) {
+      recipes.push(
+        makeRecipe({
+          id: `craft-${x.id}`,
+          type: 'craft',
+          inputs: inputsOf(x),
+          output: { id: x.id, qty: 1 },
+          source: 'nmse',
+        }),
+      );
+    }
+  };
+
+  if (input.corvetteFile && existsSync(input.corvetteFile)) {
+    for (const x of readJson<RawNmsePart[]>(input.corvetteFile)) {
       const slot = corvetteSlotOf(x.category, x.group.en);
       if (!slot) throw new Error(`corvette part ${x.id}: unknown category ${x.category}`);
-      items.set(x.id, {
-        id: x.id,
-        cat,
-        name: x.name,
-        group: x.group,
-        icon: x.icon && input.hasIcon(x.icon) ? x.icon : null,
-        value: x.value,
-        currency: x.currency,
-        ...(x.stack ? { stack: x.stack } : {}),
-        ...(x.colour ? { colour: x.colour } : {}),
-        obtain: [],
-        part: { kind: 'corvette', cls: 'corvette', slot },
-      });
-      descriptions[cat]![x.id] = { text: x.description };
-      if (x.requires.length) {
-        const inputs = x.requires.map((r) => {
-          const id = byName.get(r.name.toLowerCase());
-          if (!id) throw new Error(`corvette part ${x.id}: ingredient "${r.name}" not found`);
-          return { id, qty: r.qty };
-        });
-        recipes.push(
-          makeRecipe({
-            id: `craft-${x.id}`,
-            type: 'craft',
-            inputs,
-            output: { id: x.id, qty: 1 },
-            source: 'nmse',
-          }),
-        );
+      addNmse(x, PART_CATEGORIES.corvette, { part: { kind: 'corvette', cls: 'corvette', slot } });
+    }
+  }
+
+  // Freighter modules: reuse the upstream item when name and recipe match (AssistantNMS has most of
+  // them, often without a pt-br name); otherwise add the NMSE one.
+  if (input.freighterFile && existsSync(input.freighterFile)) {
+    const sig = (qs: Qty[]) =>
+      qs
+        .map((q) => `${q.id}:${q.qty}`)
+        .sort()
+        .join();
+    const base = (s: string) => s.toLowerCase().replace(/ \d$/, '');
+    const linked = new Set<string>();
+    for (const x of readJson<RawNmsePart[]>(input.freighterFile)) {
+      const kind = x.category as FreighterKind;
+      if (!KIND_ORDER.includes(kind)) throw new Error(`freighter module ${x.id}: bad kind ${kind}`);
+      const want = sig(inputsOf(x));
+      const match = [...items.values()].find(
+        (i) =>
+          !linked.has(i.id) &&
+          !i.manual &&
+          i.cat === 'buildings' &&
+          base(i.name.en) === base(x.name.en) &&
+          sig(recipes.find((r) => r.id === `craft-${i.id}`)?.inputs ?? []) === want,
+      );
+      if (!match) {
+        addNmse(x, 'buildings', { freighter: kind });
+        continue;
       }
+      linked.add(match.id);
+      match.freighter = kind;
+      // Official pt-br names (and the numbered storage rooms) from the game's own strings.
+      if (match.name.pt === match.name.en || match.name.en !== x.name.en) match.name = x.name;
+      if (match.group.pt === match.group.en) match.group = x.group;
     }
   }
 

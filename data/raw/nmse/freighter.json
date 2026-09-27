@@ -1,0 +1,1276 @@
+[
+ {
+  "id": "FRE_CORR_A",
+  "icon": "freighter/FRE_CORR_A.webp",
+  "category": "corridor",
+  "name": {
+   "en": "Freighter Corridor",
+   "pt": "Corredor de nave cargueira"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "This pressurised corridor intelligently adjoins to existing freighter rooms, connecting habitable spaces inside large starships.\n\nThis flexible corridor piece will automatically expand and contract to form curves or junctions when placed.",
+   "pt": "Este corredor pressurizado junta-se de forma inteligente às salas de naves cargueiras já existentes, conectando espaços habitáveis dentro de grandes naves.\n\nEsta peça de corredor flexível expande e contrai automaticamente para formar curvas ou junções quando colocada."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Tritium",
+    "qty": 5
+   }
+  ]
+ },
+ {
+  "id": "FRE_CORR_A_GLAS",
+  "icon": "freighter/FRE_CORR_A_GLAS.webp",
+  "category": "corridor",
+  "name": {
+   "en": "Freighter Glass Corridor",
+   "pt": "Corredor de vidro de nave cargueira"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "This pressurised corridor intelligently adjoins to existing freighter rooms, connecting habitable spaces inside large starships. The low-expansion, radiation-proof glass ceiling allows a view into deep space.\n\nThis flexible piece will automatically expand and contract to form curves or junctions when placed.",
+   "pt": "Este corredor pressurizado junta-se de forma inteligente às salas de naves cargueiras já existentes, conectando espaços habitáveis dentro de grandes naves. O teto de vidro à prova de radiação de baixa expansão permite ver o espaço.\n\nEsta peça de corredor flexível expande e contrai automaticamente para formar curvas ou junções quando colocada."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Glass",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_LADDER",
+  "icon": "freighter/FRE_ROOM_LADDER.webp",
+  "category": "stairs",
+  "name": {
+   "en": "Ladder Module",
+   "pt": "Módulo de escada"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "An inbuilt freighter ladder for traversing vertically between freighter decks.\n\nAttaches directly to corridors.",
+   "pt": "Uma escada embutida para atravessar verticalmente entre os conveses da nave cargueira.\n\nAcopla-se diretamente aos corredores."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   }
+  ]
+ },
+ {
+  "id": "FRE_EXT_PLATFOR",
+  "icon": "freighter/FRE_EXT_PLATFOR.webp",
+  "category": "exterior",
+  "name": {
+   "en": "Exterior Platform",
+   "pt": "Plataforma externa"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "An unsheltered observation deck. Allows the user to step outside the freighter hull, and gaze directly into the vastness of space.\n\nA Bulkhead Door must be installed to allow access to exterior spaces.",
+   "pt": "Uma plataforma de observação desabrigada. Com ela, o usuário pode sair da fuselagem da nave cargueira e olhar diretamente para a vastidão do espaço.\n\nUma porta de parede interna deve ser instalada para permitir o acesso aos espaços externos."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   }
+  ]
+ },
+ {
+  "id": "FRE_EXT_WALKWAY",
+  "icon": "freighter/FRE_EXT_WALKWAY.webp",
+  "category": "exterior",
+  "name": {
+   "en": "Exterior Catwalk",
+   "pt": "Passarela externa"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "This exterior walkway intelligently adjoins to existing freighter rooms, creating decking outside the hull of large starships.\n\nA Bulkhead Door must be installed to allow access to exterior spaces.",
+   "pt": "Esta passarela externa se junta às salas já existentes na nave cargueira, criando um convés fora da fuselagem de grandes naves.\n\nUma porta de parede interna deve ser instalada para permitir o acesso aos espaços externos."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_SCAN",
+  "icon": "freighter/FRE_ROOM_SCAN.webp",
+  "category": "room",
+  "name": {
+   "en": "Scanner Room",
+   "pt": "Sala do verificador"
+  },
+  "group": {
+   "en": "Planetary Probe",
+   "pt": "Sonda planetária"
+  },
+  "description": {
+   "en": "Advanced integrated freighter equipment. Upon use, this planetary scanner probes all celestial bodies in the local solar system. This module is placed as an entire room and comes with its functional units pre-installed.\n\nScanned moons and planets are Discovered, and sensors collect high-level data such as weather conditions and prominent resources.",
+   "pt": "Equipamento integrado avançado de nave cargueira. Ao usar, esse verificador planetário sonda todos os corpos celestes no sistema solar local. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nLuas e planetas verificados são descobertos, e os sensores coletam dados de alto nível, como condições climáticas e recursos notáveis."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Gold",
+    "qty": 30
+   },
+   {
+    "name": "Ion Battery",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_SHOP",
+  "icon": "freighter/FRE_ROOM_SHOP.webp",
+  "category": "room",
+  "name": {
+   "en": "Galactic Trade Room",
+   "pt": "Sala comercial galáctica"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "Integrated freighter equipment providing instant local access to the galactic trade market for resources and commodities.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Equipamento integrado de nave cargueira que fornece acesso local instantâneo ao mercado comercial galáctico para obter recursos e comodidades.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Chromatic Metal",
+    "qty": 35
+   },
+   {
+    "name": "Microprocessor",
+    "qty": 2
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_FLEET",
+  "icon": "freighter/FRE_ROOM_FLEET.webp",
+  "category": "room",
+  "name": {
+   "en": "Fleet Command Room",
+   "pt": "Sala de comando da frota"
+  },
+  "group": {
+   "en": "Expedition Management Terminal",
+   "pt": "Terminal de gerenciamento de expedição"
+  },
+  "description": {
+   "en": "Core Fleet Management Station. This advanced holographic communications station is vital for managing fleet expeditions from the comfort of your capital ship. This module is placed as an entire room and comes with its functional units pre-installed.\n\nUser is advised that multiple stations are required to manage more than one expedition at a time.",
+   "pt": "Principal estação de gerenciamento da frota. Essa estação de comunicação holográfica avançada é essencial para gerenciar as expedições da frota, do conforto de sua nave capital. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nO usuário deve saber que várias estações são necessárias para gerenciar mais de uma expedição por vez."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Gold",
+    "qty": 40
+   },
+   {
+    "name": "Tritium",
+    "qty": 10
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_DRESS",
+  "icon": "freighter/FRE_ROOM_DRESS.webp",
+  "category": "room",
+  "name": {
+   "en": "Appearance Modifier Room",
+   "pt": "Modificador de aparência de sala"
+  },
+  "group": {
+   "en": "Customise Personal Visuals",
+   "pt": "Personalize o visual pessoal"
+  },
+  "description": {
+   "en": "Integrated freighter equipment allowing the user to adjust their personal appearance settings. This module is placed as an entire room and comes with its functional units pre-installed.\n\nThe module applies advanced holographic techniques to recalibrate the light around the user, allowing them to adopt whatever appearance they desire. Visual data must be properly formatted before use.",
+   "pt": "Equipamento integrado de nave cargueira que permite ao usuário ajustar suas configurações de aparência. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nEle aplica técnicas holográficas avançadas para recalibrar a luz ao redor do usuário, permitindo-lhe adotar a aparência que quiser. Os dados visuais devem ser formatados de maneira adequada, antes de serem usados."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Carbon Nanotubes",
+    "qty": 4
+   },
+   {
+    "name": "Solar Mirror",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_NPCSCI",
+  "icon": "freighter/FRE_ROOM_NPCSCI.webp",
+  "category": "room",
+  "name": {
+   "en": "Science Specialist's Room",
+   "pt": "Sala do especialista em ciência"
+  },
+  "group": {
+   "en": "Worker Terminal",
+   "pt": "Terminal do trabalhador"
+  },
+  "description": {
+   "en": "Integrated freighter research equipment tailored to the needs of scientists, and equipped for research and development of scientific blueprints.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Equipamento integrado de pesquisa de naves cargueiras projetado para as demandas de cientistas e equipado para o desenvolvimento de plantas científicas.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Magnetised Ferrite",
+    "qty": 25
+   },
+   {
+    "name": "Chromatic Metal",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_NPCBUI",
+  "icon": "freighter/FRE_ROOM_NPCBUI.webp",
+  "category": "room",
+  "name": {
+   "en": "Construction Specialist's Room",
+   "pt": "Sala do especialista em construção"
+  },
+  "group": {
+   "en": "Worker Terminal",
+   "pt": "Terminal do trabalhador"
+  },
+  "description": {
+   "en": "Integrated freighter research equipment tailored to the needs of construction overseers, and equipped with architectural and engineering design software.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Equipamento integrado de pesquisa de naves cargueiras projetado para as demandas de supervisores de construção e equipado com software de design de arquitetura e engenharia.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Di-hydrogen Jelly",
+    "qty": 2
+   },
+   {
+    "name": "Chromatic Metal",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_ROCLOC",
+  "icon": "freighter/FRE_ROOM_ROCLOC.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Shuttle Room",
+   "pt": "Sala de transporte de armazenamento"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "Advanced integrated freighter equipment. Construction allows the user to summon the Storage Shuttle while in the same system as their freighter.\n\nPlace excess materials in the shuttle Inventory, then launch to transfer contents to the freighter Inventory.\n\nInterfaces with the Exosuit Quick Command Menu for ease of use.",
+   "pt": "Equipamento integrado avançado de nave cargueira. Construção que permite ao usuário chamar o transporte de armazenamento enquanto estiver no mesmo sistema da nave cargueira.\n\nColoque excesso de materiais no inventário do transporte, depois lance para transferir o conteúdo para o inventário da nave cargueira.\n\nInterage com o menu de comandos rápidos do exotraje para facilitar o uso."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Tritium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_TECH",
+  "icon": "freighter/FRE_ROOM_TECH.webp",
+  "category": "room",
+  "name": {
+   "en": "Technology Room (expansion)",
+   "pt": "Sala tecnológica (expansão)"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "A spacious chamber with a technical aesthetic, for expanding habitable spaces inside large spaceships.",
+   "pt": "Uma câmara espaçosa com uma estética técnica para expandir espaços habitáveis dentro de naves grandes."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Chromatic Metal",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_PLANT1",
+  "icon": "freighter/FRE_ROOM_PLANT1.webp",
+  "category": "room",
+  "name": {
+   "en": "Cultivation Chamber",
+   "pt": "Câmara de cultivo"
+  },
+  "group": {
+   "en": "Agricultural Module",
+   "pt": "Módulo agrícola"
+  },
+  "description": {
+   "en": "A temperature controlled bio-room. A bed of nutrient-rich soil provides ideal conditions for cultivating agricultural crops.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Uma sala biológica com temperatura controlada. Um canteiro de solo rico em nutrientes proporciona as condições ideais para o cultivo de culturas agrícolas.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Oxygen",
+    "qty": 25
+   },
+   {
+    "name": "Faecium",
+    "qty": 10
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_PLANT0",
+  "icon": "freighter/FRE_ROOM_PLANT0.webp",
+  "category": "room",
+  "name": {
+   "en": "Double Cultivation Chamber",
+   "pt": "Câmara de cultivação dupla"
+  },
+  "group": {
+   "en": "Agricultural Module",
+   "pt": "Módulo agrícola"
+  },
+  "description": {
+   "en": "A temperature controlled bio-room. Two beds of nutrient-rich soil provide ideal conditions for cultivating agricultural crops.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Uma sala biológica com temperatura controlada. Dois canteiros de solo rico em nutrientes proporcionam as condições ideais para o cultivo de culturas agrícolas.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Oxygen",
+    "qty": 35
+   },
+   {
+    "name": "Faecium",
+    "qty": 25
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_COOK",
+  "icon": "freighter/FRE_ROOM_COOK.webp",
+  "category": "room",
+  "name": {
+   "en": "Nutrition Room",
+   "pt": "Sala de nutrição"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "An integrated Nutrient Processor module, able to refine gathered ingredients into edible food products. This module is placed as an entire room and comes with its functional units pre-installed.\n\nUser is advised that consumption of generated products is entirely at their own risk.",
+   "pt": "Um módulo integrado de processamento de nutrientes capaz de refinar ingredientes em alimentos comestíveis. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nO usuário consumirá os produtos gerados por sua própria conta e risco."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Pure Ferrite",
+    "qty": 40
+   },
+   {
+    "name": "Oxygen",
+    "qty": 15
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_NPCFAR",
+  "icon": "freighter/FRE_ROOM_NPCFAR.webp",
+  "category": "room",
+  "name": {
+   "en": "Agricultural Specialist's Room",
+   "pt": "Sala do especialista em agricultura"
+  },
+  "group": {
+   "en": "Worker Terminal",
+   "pt": "Terminal do trabalhador"
+  },
+  "description": {
+   "en": "Integrated freighter research equipment tailored to the needs of farmers, and equipped for the analysis and cultivation of farmable crops.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Equipamento integrado de pesquisa de naves cargueiras projetado para as demandas de fazendeiros e equipado para a análise e cultivo de colheitas cultiváveis.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Condensed Carbon",
+    "qty": 25
+   },
+   {
+    "name": "Oxygen",
+    "qty": 25
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_BIO",
+  "icon": "freighter/FRE_ROOM_BIO.webp",
+  "category": "room",
+  "name": {
+   "en": "Biological Room (expansion)",
+   "pt": "Sala biológica (expansão)"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "This spacious greenhouse chamber naturally filters and oxygenates the air supply, and offers a little sanctuary of green in freighter habitation.",
+   "pt": "Esta câmara espaçosa de estufa filtra e oxigena naturalmente o fornecimento de ar e oferece um pequeno santuário ecológico em naves cargueiras."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 40
+   },
+   {
+    "name": "Oxygen",
+    "qty": 30
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_REFINE",
+  "icon": "freighter/FRE_ROOM_REFINE.webp",
+  "category": "room",
+  "name": {
+   "en": "Refiner Room",
+   "pt": "Sala do refinador"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "Vital integrated freighter equipment. The Freighter Refiner allows three different substances to be processed into more powerful and more advanced materials.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Equipamento vital integrado de nave cargueira. O refinador da nave cargueira permite que três substâncias diferentes sejam processadas para gerar materiais mais avançados e mais poderosos.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Di-hydrogen Jelly",
+    "qty": 2
+   },
+   {
+    "name": "Gold",
+    "qty": 45
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_EXTR",
+  "icon": "freighter/FRE_ROOM_EXTR.webp",
+  "category": "room",
+  "name": {
+   "en": "Stellar Extractor Room",
+   "pt": "Sala do extrator estelar"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "Advanced integrated freighter equipment. Gathers resources directly from the interstellar medium, via a complex system of suction intakes and condensing tubes. The gathered substance varies with the local star classification.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Equipamento integrado avançado de nave cargueira. Coleta recursos diretamente de meios interestelares por meio de um sistema complexo de tubos de sucção e condensação. A substância coletada varia com a classificação estelar local.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Gold",
+    "qty": 45
+   },
+   {
+    "name": "Magnetised Ferrite",
+    "qty": 40
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_VEHICL",
+  "icon": "freighter/FRE_ROOM_VEHICL.webp",
+  "category": "room",
+  "name": {
+   "en": "Orbital Exocraft Materialiser",
+   "pt": "Materializador orbital de exoveículo"
+  },
+  "group": {
+   "en": "Rapid Deployment Freighter Module",
+   "pt": "Módulo de implantação rápida para naves cargueiras"
+  },
+  "description": {
+   "en": "Advanced integrated freighter equipment. Construction allows the user to summon any owned Exocraft while in the same system as their freighter. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInterfaces with the Exosuit Quick Command Menu for ease of use.",
+   "pt": "Equipamento integrado avançado de nave cargueira. Construção que permite ao usuário chamar qualquer exoveículo que possua enquanto estiver no mesmo sistema que sua nave cargueira. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nInterage com o menu de comandos rápidos do exotraje para facilitar o uso."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Gold",
+    "qty": 60
+   },
+   {
+    "name": "Ionised Cobalt",
+    "qty": 50
+   },
+   {
+    "name": "Warp Cell",
+    "qty": 3
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_NPCVEH",
+  "icon": "freighter/FRE_ROOM_NPCVEH.webp",
+  "category": "room",
+  "name": {
+   "en": "Exocraft Specialist's Room",
+   "pt": "Sala do especialista em exoveículos"
+  },
+  "group": {
+   "en": "Worker Terminal",
+   "pt": "Terminal do trabalhador"
+  },
+  "description": {
+   "en": "Integrated freighter research equipment tailored to the needs of exocraft technicians, and equipped with bespoke vehicular design software.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Equipamento integrado de pesquisa de naves cargueiras projetado para as demandas de técnicos de exoveículos e equipado com software de design veicular.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Di-hydrogen",
+    "qty": 25
+   },
+   {
+    "name": "Chromatic Metal",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_NPCWEA",
+  "icon": "freighter/FRE_ROOM_NPCWEA.webp",
+  "category": "room",
+  "name": {
+   "en": "Weapons Specialist Room",
+   "pt": "Sala do especialista em armas"
+  },
+  "group": {
+   "en": "Worker Terminal",
+   "pt": "Terminal do trabalhador"
+  },
+  "description": {
+   "en": "Integrated freighter research equipment tailored to the needs of armourers, and equipped for the development of munitions and explosives as well as selected civilian tech.\n\nThis module is placed as an entire room and comes with its functional units pre-installed.",
+   "pt": "Equipamento integrado de pesquisa de naves cargueiras projetado para as demandas de armeiros e equipado para o desenvolvimento de explosivos, além de tecnologias civis selecionadas.\n\nEste módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Pugneum",
+    "qty": 25
+   },
+   {
+    "name": "Chromatic Metal",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE0",
+  "icon": "freighter/FRE_ROOM_STORE0.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 0",
+   "pt": "Sala de armazenamento 0"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE1",
+  "icon": "freighter/FRE_ROOM_STORE1.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 1",
+   "pt": "Sala de armazenamento 1"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE2",
+  "icon": "freighter/FRE_ROOM_STORE2.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 2",
+   "pt": "Sala de armazenamento 2"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE3",
+  "icon": "freighter/FRE_ROOM_STORE3.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 3",
+   "pt": "Sala de armazenamento 3"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE4",
+  "icon": "freighter/FRE_ROOM_STORE4.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 4",
+   "pt": "Sala de armazenamento 4"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE5",
+  "icon": "freighter/FRE_ROOM_STORE5.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 5",
+   "pt": "Sala de armazenamento 5"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE6",
+  "icon": "freighter/FRE_ROOM_STORE6.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 6",
+   "pt": "Sala de armazenamento 6"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE7",
+  "icon": "freighter/FRE_ROOM_STORE7.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 7",
+   "pt": "Sala de armazenamento 7"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE8",
+  "icon": "freighter/FRE_ROOM_STORE8.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 8",
+   "pt": "Sala de armazenamento 8"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_STORE9",
+  "icon": "freighter/FRE_ROOM_STORE9.webp",
+  "category": "room",
+  "name": {
+   "en": "Storage Room 9",
+   "pt": "Sala de armazenamento 9"
+  },
+  "group": {
+   "en": "Custom Freighter Module",
+   "pt": "Módulo personalizado de nave cargueira"
+  },
+  "description": {
+   "en": "Hybrid high-capacity storage unit / shelving module for installation in interstellar freighters. This module is placed as an entire room and comes with its functional units pre-installed.\n\nInventory capacity interfaces directly with planetary Storage Containers, and the module may be renamed for ease of identification.",
+   "pt": "Módulo híbrido de armazenamento / prateleiras de alta capacidade para instalação em naves cargueiras interestelares. Este módulo é colocado como uma sala inteira e acompanha unidades funcionais pré-instaladas.\n\nA capacidade de inventário interage diretamente com os contêineres de armazenamento planetários, e o módulo pode ser renomeado para facilitar a identificação."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 50
+   },
+   {
+    "name": "Sodium",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_IND",
+  "icon": "freighter/FRE_ROOM_IND.webp",
+  "category": "room",
+  "name": {
+   "en": "Industrial Room (expansion)",
+   "pt": "Sala industrial (expansão)"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "A spacious chamber with an industrial aesthetic, for expanding habitable spaces inside large spaceships.",
+   "pt": "Uma câmara espaçosa com estética industrial para expandir espaços habitáveis dentro de naves grandes."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Pure Ferrite",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_IND1",
+  "icon": "freighter/FRE_ROOM_IND1.webp",
+  "category": "room",
+  "name": {
+   "en": "Expansion Room Variant",
+   "pt": "Variante da sala de expansão"
+  },
+  "group": {
+   "en": "Advanced Freighter Module",
+   "pt": "Módulo avançado de nave cargueira"
+  },
+  "description": {
+   "en": "A spacious chamber with an industrial aesthetic, for expanding habitable spaces inside large spaceships.",
+   "pt": "Uma câmara espaçosa com estética industrial para expandir espaços habitáveis dentro de naves grandes."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 60
+   },
+   {
+    "name": "Pure Ferrite",
+    "qty": 20
+   }
+  ]
+ },
+ {
+  "id": "FRE_CORR_STA",
+  "icon": "freighter/FRE_CORR_STA.webp",
+  "category": "stairs",
+  "name": {
+   "en": "Freighter Stairs",
+   "pt": "Escada de nave cargueira"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "A sturdy, non-slip staircase with an ergonomic incline, for traversing vertically between freighter decks.",
+   "pt": "Uma escada resistente e antiderrapante com uma inclinação ergonômica. Serve para passar verticalmente entre os conveses da nave cargueira."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Tritium",
+    "qty": 5
+   }
+  ]
+ },
+ {
+  "id": "FRE_CORR_G_STA",
+  "icon": "freighter/FRE_CORR_G_STA.webp",
+  "category": "stairs",
+  "name": {
+   "en": "Freighter Glass Stairs",
+   "pt": "Escada de vidro de nave cargueira"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "A sturdy, non-slip staircase with an ergonomic incline, for traversing vertically between freighter decks.\n\nConstructed from low thermal expansion glass, these stairs provide the user with a thrilling view into deep space.",
+   "pt": "Uma escada resistente e antiderrapante com uma inclinação ergonômica. Serve para passar verticalmente entre os conveses da nave cargueira.\n\nConstruída com vidro expansível, térmico e baixo, ela oferece uma visão incrível do espaço."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Glass",
+    "qty": 1
+   }
+  ]
+ },
+ {
+  "id": "FRE_EXT_W_STA",
+  "icon": "freighter/FRE_EXT_W_STA.webp",
+  "category": "stairs",
+  "name": {
+   "en": "Freighter Exterior Stairs",
+   "pt": "Escada exterior de nave cargueira"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "A sturdy, non-slip staircase with an ergonomic incline, for traversing vertically between freighter decks.\n\nThese robust stairs can be affixed outside the freighter hull, creating connections between exterior catwalks and platforms.",
+   "pt": "Uma escada resistente e antiderrapante com uma inclinação ergonômica. Serve para passar verticalmente entre os conveses da nave cargueira.\n\nEla pode ser fixada no lado de fora da fuselagem da nave cargueira, criando conexões entre as passarelas e plataformas externas."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Pure Ferrite",
+    "qty": 30
+   }
+  ]
+ },
+ {
+  "id": "FRE_CORR_STA_B",
+  "icon": "freighter/FRE_CORR_STA_B.webp",
+  "category": "stairs",
+  "name": {
+   "en": "Steel Staircase",
+   "pt": "Escada interna"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "A sturdy, non-slip staircase with an ergonomic incline, for traversing vertically between freighter decks.",
+   "pt": "Uma escada resistente e antiderrapante com uma inclinação ergonômica. Serve para passar verticalmente entre os conveses da nave cargueira."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Tritium",
+    "qty": 5
+   }
+  ]
+ },
+ {
+  "id": "FRE_CORR_B",
+  "icon": "freighter/FRE_CORR_B.webp",
+  "category": "corridor",
+  "name": {
+   "en": "Freighter Passageway",
+   "pt": "Passagem de nave cargueira"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "This pressurised corridor intelligently adjoins to existing freighter rooms, connecting habitable spaces inside large starships.\n\nThis flexible corridor piece will automatically expand and contract to form curves or junctions when placed.",
+   "pt": "Este corredor pressurizado junta-se de forma inteligente às salas de naves cargueiras já existentes, conectando espaços habitáveis dentro de grandes naves.\n\nEsta peça de corredor flexível expande e contrai automaticamente para formar curvas ou junções quando colocada."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Tritium",
+    "qty": 5
+   }
+  ]
+ },
+ {
+  "id": "FRE_ROOM_B",
+  "icon": "freighter/FRE_ROOM_B.webp",
+  "category": "room",
+  "name": {
+   "en": "Commercial Room (expansion)",
+   "pt": "Sala comercial (expansão)"
+  },
+  "group": {
+   "en": "Core Freighter Module",
+   "pt": "Módulo central de nave cargueira"
+  },
+  "description": {
+   "en": "A spacious chamber with a commercial aesthetic, for expanding habitable spaces inside large spaceships.",
+   "pt": "Uma câmara espaçosa com uma estética comercial para expandir espaços habitáveis dentro de naves grandes."
+  },
+  "value": 1,
+  "currency": "Credits",
+  "colour": "2C7C9F",
+  "requires": [
+   {
+    "name": "Silver",
+    "qty": 30
+   },
+   {
+    "name": "Tritium",
+    "qty": 5
+   }
+  ]
+ }
+]

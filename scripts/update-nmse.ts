@@ -1,10 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
-// MANUAL, network-bound: refresh data/raw/nmse (corvette parts) + public/icons/corvette from NMSE
-// (vectorcmdr/NMSE, game data extracted from No Man's Sky), then rebuild the catalog.
+// MANUAL, network-bound: refresh data/raw/nmse (corvette parts + freighter base modules) and
+// public/icons/{corvette,freighter} from NMSE (vectorcmdr/NMSE, game data extracted from No Man's
+// Sky), then rebuild the catalog.
 //
-//   npm run data:update-corvette -- [--ref <branch|sha>]
+//   npm run data:update-nmse -- [--ref <branch|sha>]
 //
-// AssistantNMS does not publish corvette modules yet; NMSE does. Review the git diff before committing.
+// AssistantNMS does not publish corvette modules and lacks newer freighter rooms; NMSE has both.
+// Review the git diff before committing.
 import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
@@ -12,7 +14,8 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseArgs } from 'node:util';
 import sharp from 'sharp';
-import type { RawCorvettePart } from './lib/catalog.ts';
+import type { RawNmsePart } from './lib/catalog.ts';
+import { freighterKindOf } from '../src/lib/freighter.ts';
 import { run as buildCatalog } from './build-catalog.ts';
 
 const REPO = 'https://github.com/vectorcmdr/NMSE';
@@ -39,6 +42,7 @@ interface NmseItem {
   MaxStackSize?: number;
   Colour?: string;
   CorvettePartCategory?: string;
+  BuildableOnFreighter?: boolean;
   RequiredItems?: { Id: string; Quantity: number }[];
 }
 
@@ -59,6 +63,7 @@ try {
     '--no-cone',
     '/README.md',
     json('Corvette.json'),
+    json('Buildings.json'),
     json('lang/pt-BR.json'),
     ...INGREDIENT_TABLES.map((t) => json(`${t}.json`)),
   );
@@ -78,65 +83,89 @@ try {
     for (const x of readJson<NmseItem[]>(join(tmp, json(`${t}.json`)))) names.set(x.Id, x.Name);
   }
 
-  // One entry per part name: NMSE lists every placement/colour variant (e.g. 16 per hull plate).
-  const parts: RawCorvettePart[] = [];
+  const toPart = (
+    x: NmseItem,
+    category: string,
+    name = { en: x.Name, pt: ptOf(x.Name_LocStr)! },
+  ) => ({
+    id: x.Id,
+    icon: x.Icon ?? null,
+    category,
+    name,
+    group: { en: x.Group ?? '', pt: ptOf(x.Subtitle_LocStr) ?? x.Group ?? '' },
+    description: {
+      en: x.Description ?? '',
+      pt: ptOf(x.Description_LocStr) ?? x.Description ?? '',
+    },
+    value: x.BaseValueUnits ?? 0,
+    currency: x.CurrencyType ?? 'Credits',
+    ...(x.MaxStackSize ? { stack: x.MaxStackSize } : {}),
+    ...(x.Colour ? { colour: x.Colour } : {}),
+    requires: (x.RequiredItems ?? []).map((r) => {
+      const name = names.get(r.Id);
+      if (!name) throw new Error(`${x.Id}: unknown ingredient ${r.Id}`);
+      return { name, qty: r.Quantity };
+    }),
+  });
+
+  // Corvette: one entry per part name; NMSE lists every placement/colour variant (16 per plate).
+  const corvette: RawNmsePart[] = [];
   const seen = new Set<string>();
   let skipped = 0;
   for (const x of readJson<NmseItem[]>(join(tmp, json('Corvette.json')))) {
-    const namePt = ptOf(x.Name_LocStr);
     // Unreleased placeholders have no localized name ("Bld Big Gen 4").
-    if (!namePt || /^Bld /.test(x.Name)) {
+    if (!ptOf(x.Name_LocStr) || /^Bld /.test(x.Name)) {
       skipped++;
       continue;
     }
     if (seen.has(x.Name)) continue;
     seen.add(x.Name);
-    parts.push({
-      id: x.Id,
-      icon: x.Icon ?? null,
-      category: x.CorvettePartCategory ?? 'None',
-      name: { en: x.Name, pt: namePt },
-      group: { en: x.Group ?? '', pt: ptOf(x.Subtitle_LocStr) ?? x.Group ?? '' },
-      description: {
-        en: x.Description ?? '',
-        pt: ptOf(x.Description_LocStr) ?? x.Description ?? '',
-      },
-      value: x.BaseValueUnits ?? 0,
-      currency: x.CurrencyType ?? 'Credits',
-      ...(x.MaxStackSize ? { stack: x.MaxStackSize } : {}),
-      ...(x.Colour ? { colour: x.Colour } : {}),
-      requires: (x.RequiredItems ?? []).map((r) => {
-        const name = names.get(r.Id);
-        if (!name) throw new Error(`${x.Id}: unknown ingredient ${r.Id}`);
-        return { name, qty: r.Quantity };
-      }),
-    });
+    corvette.push(toPart(x, x.CorvettePartCategory ?? 'None'));
   }
-  console.log(`corvette parts: ${parts.length} (${skipped} unreleased placeholders skipped)`);
+  console.log(`corvette parts: ${corvette.length} (${skipped} unreleased placeholders skipped)`);
+
+  // Freighter base modules used by the freighter planner (current system, not the legacy one).
+  const freighter: RawNmsePart[] = [];
+  for (const x of readJson<NmseItem[]>(join(tmp, json('Buildings.json')))) {
+    const kind = freighterKindOf(x.Id);
+    if (!kind || !x.BuildableOnFreighter || !ptOf(x.Name_LocStr)) continue;
+    // Storage Room 0-9 pair with Storage Container 0-9 but share one name in the game data.
+    const n = /^FRE_ROOM_STORE(\d)$/.exec(x.Id)?.[1];
+    const pt = ptOf(x.Name_LocStr)!;
+    const name = n ? { en: `${x.Name} ${n}`, pt: `${pt} ${n}` } : { en: x.Name, pt };
+    freighter.push(toPart(x, kind, name));
+  }
+  console.log(`freighter modules: ${freighter.length}`);
 
   // Icons.
-  const icons = parts.flatMap((p) => (p.icon ? [p.icon] : []));
-  git(tmp, 'sparse-checkout', 'add', ...icons.map((i) => `/Resources/images/${i}`));
-  const iconDir = join(root, 'public/icons/corvette');
-  rmSync(iconDir, { recursive: true, force: true });
-  mkdirSync(iconDir, { recursive: true });
-  for (const p of parts) {
-    const src = p.icon && join(tmp, 'Resources/images', p.icon);
-    if (!src || !existsSync(src) || PLACEHOLDER_ICONS.has(p.icon!)) {
-      console.log(`  no icon: ${p.id}`);
-      p.icon = null;
-      continue;
+  for (const [dir, parts] of [
+    ['corvette', corvette],
+    ['freighter', freighter],
+  ] as const) {
+    const icons = parts.flatMap((p) => (p.icon ? [p.icon] : []));
+    git(tmp, 'sparse-checkout', 'add', ...icons.map((i) => `/Resources/images/${i}`));
+    const iconDir = join(root, 'public/icons', dir);
+    rmSync(iconDir, { recursive: true, force: true });
+    mkdirSync(iconDir, { recursive: true });
+    for (const p of parts) {
+      const src = p.icon && join(tmp, 'Resources/images', p.icon);
+      if (!src || !existsSync(src) || PLACEHOLDER_ICONS.has(p.icon!)) {
+        console.log(`  no icon: ${p.id}`);
+        p.icon = null;
+        continue;
+      }
+      p.icon = `${dir}/${p.id}.webp`;
+      await sharp(src)
+        .resize(ICON_SIZE, ICON_SIZE, { fit: 'inside', withoutEnlargement: true })
+        .webp({ quality: 82 })
+        .toFile(join(root, 'public/icons', p.icon));
     }
-    p.icon = `corvette/${p.id}.webp`;
-    await sharp(src)
-      .resize(ICON_SIZE, ICON_SIZE, { fit: 'inside', withoutEnlargement: true })
-      .webp({ quality: 82 })
-      .toFile(join(root, 'public/icons', p.icon));
   }
 
   const outDir = join(root, 'data/raw/nmse');
   mkdirSync(outDir, { recursive: true });
-  writeFileSync(join(outDir, 'corvette.json'), JSON.stringify(parts, null, 1) + '\n');
+  writeFileSync(join(outDir, 'corvette.json'), JSON.stringify(corvette, null, 1) + '\n');
+  writeFileSync(join(outDir, 'freighter.json'), JSON.stringify(freighter, null, 1) + '\n');
   writeFileSync(
     join(outDir, 'SOURCE.json'),
     JSON.stringify(

@@ -1,6 +1,6 @@
 # Peças de Corveta adicionadas à mão para o "Montar nave" (#/builder?c=corvette).
 #
-# As peças vêm do NMSE (data/raw/nmse/corvette.json, `npm run data:update-corvette`). Use este
+# As peças vêm do NMSE (data/raw/nmse/corvette.json, `npm run data:update-nmse`). Use este
 # arquivo só para peças que ainda faltarem lá, com dados verificados no jogo (nome EN + nome oficial
 # PT-BR, custo e receita, se houver).
 #
