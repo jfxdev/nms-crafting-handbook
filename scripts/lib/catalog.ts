@@ -3,11 +3,14 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse as parseYaml } from 'yaml';
+import { KIND_ORDER, type FreighterKind } from '../../src/lib/freighter.ts';
+import { corvetteSlotOf, isValidPart, starshipPartOf } from '../../src/lib/parts.ts';
 import type {
   Catalog,
   DescriptionShard,
   Item,
   Localized,
+  Part,
   Qty,
   Recipe,
   RecipeType,
@@ -28,6 +31,12 @@ export const ITEM_FILES: Record<string, string> = {
   TradeItems: 'trade',
   ProceduralProducts: 'procedural',
   Others: 'others',
+};
+
+/** Categories for ship-builder parts, pulled out of their upstream file's category. */
+export const PART_CATEGORIES: Record<Part['kind'], string> = {
+  starship: 'starshipParts',
+  corvette: 'corvetteParts',
 };
 
 /** Upstream recipe files -> recipe type (crafting recipes come from items' RequiredItems). */
@@ -72,6 +81,8 @@ interface OverrideItem {
   value?: number;
   currency?: string;
   source?: string;
+  /** Ship-builder slot, e.g. { kind: corvette, cls: corvette, slot: habitation }. */
+  part?: Part;
 }
 interface OverrideRecipe {
   id?: string;
@@ -86,8 +97,30 @@ export interface Overrides {
   recipes?: OverrideRecipe[];
 }
 
+/** Normalized NMSE part (data/raw/nmse/{corvette,freighter}.json, see scripts/update-nmse.ts). */
+export interface RawNmsePart {
+  id: string;
+  /** Path under icons/ once converted (NMSE file name before that). */
+  icon: string | null;
+  /** Corvette: NMSE CorvettePartCategory ("Cockpit", "Gear, Engine"...). Freighter: planner kind. */
+  category: string;
+  name: Localized;
+  group: Localized;
+  description: Localized;
+  value: number;
+  currency: string;
+  stack?: number;
+  colour?: string;
+  /** Ingredients by English name; resolved to catalog ids at build time. */
+  requires: { name: string; qty: number }[];
+}
+
 export interface BuildInput {
   rawDir: string;
+  /** data/raw/nmse/corvette.json, when present. */
+  corvetteFile?: string;
+  /** data/raw/nmse/freighter.json, when present. */
+  freighterFile?: string;
   source: Omit<Source, 'stale'>;
   overrides: Overrides[];
   /** content/descriptions directory with <id>.<en|pt>.md files. */
@@ -179,9 +212,13 @@ export function buildCatalog(input: BuildInput): BuildOutput {
       const p = pt.get(x.Id);
       if (!p) warnings.push(`missing pt-br translation for ${x.Id}`);
       const icon = x.Icon ? x.Icon.replace(/\.\w+$/, '.webp') : null;
+      const part = starshipPartOf(x.Group ?? '', x.Description ?? '');
+      if (!part && /^(Fighter|Hauler|Explorer|Solar) Starship Component$/.test(x.Group ?? ''))
+        warnings.push(`unclassified starship part ${x.Id} (${x.Group})`);
+      const itemCat = part ? PART_CATEGORIES[part.kind] : cat;
       items.set(x.Id, {
         id: x.Id,
-        cat,
+        cat: itemCat,
         name: { en: x.Name, pt: p?.Name || x.Name },
         group: { en: x.Group ?? '', pt: p?.Group || x.Group || '' },
         icon: icon && input.hasIcon(icon) ? icon : null,
@@ -190,8 +227,10 @@ export function buildCatalog(input: BuildInput): BuildOutput {
         ...(x.MaxStackSize ? { stack: x.MaxStackSize } : {}),
         ...(x.Colour ? { colour: x.Colour } : {}),
         obtain: [],
+        ...(part ? { part } : {}),
       });
-      descriptions[cat]![x.Id] = {
+      descriptions[itemCat] ??= {};
+      descriptions[itemCat]![x.Id] = {
         text: { en: x.Description ?? '', pt: p?.Description || x.Description || '' },
       };
       const req = (x.RequiredItems ?? []).filter((r) => r.Id);
@@ -232,6 +271,93 @@ export function buildCatalog(input: BuildInput): BuildOutput {
     }
   }
 
+  // NMSE: corvette parts and freighter base modules, crafted when they list ingredients.
+  const byName = new Map<string, string>();
+  for (const item of items.values()) {
+    const n = item.name.en.toLowerCase();
+    byName.set(n, byName.has(n) ? '' : item.id);
+  }
+  const inputsOf = (x: RawNmsePart): Qty[] =>
+    x.requires.map((r) => {
+      const id = byName.get(r.name.toLowerCase());
+      if (!id) throw new Error(`NMSE part ${x.id}: ingredient "${r.name}" not found`);
+      return { id, qty: r.qty };
+    });
+  const addNmse = (x: RawNmsePart, cat: string, extra: Partial<Item>) => {
+    if (items.has(x.id)) {
+      warnings.push(`duplicate NMSE part id ${x.id}`);
+      return;
+    }
+    items.set(x.id, {
+      id: x.id,
+      cat,
+      name: x.name,
+      group: x.group,
+      icon: x.icon && input.hasIcon(x.icon) ? x.icon : null,
+      value: x.value,
+      currency: x.currency,
+      ...(x.stack ? { stack: x.stack } : {}),
+      ...(x.colour ? { colour: x.colour } : {}),
+      obtain: [],
+      ...extra,
+    });
+    descriptions[cat] ??= {};
+    descriptions[cat]![x.id] = { text: x.description };
+    if (x.requires.length) {
+      recipes.push(
+        makeRecipe({
+          id: `craft-${x.id}`,
+          type: 'craft',
+          inputs: inputsOf(x),
+          output: { id: x.id, qty: 1 },
+          source: 'nmse',
+        }),
+      );
+    }
+  };
+
+  if (input.corvetteFile && existsSync(input.corvetteFile)) {
+    for (const x of readJson<RawNmsePart[]>(input.corvetteFile)) {
+      const slot = corvetteSlotOf(x.category, x.group.en);
+      if (!slot) throw new Error(`corvette part ${x.id}: unknown category ${x.category}`);
+      addNmse(x, PART_CATEGORIES.corvette, { part: { kind: 'corvette', cls: 'corvette', slot } });
+    }
+  }
+
+  // Freighter modules: reuse the upstream item when name and recipe match (AssistantNMS has most of
+  // them, often without a pt-br name); otherwise add the NMSE one.
+  if (input.freighterFile && existsSync(input.freighterFile)) {
+    const sig = (qs: Qty[]) =>
+      qs
+        .map((q) => `${q.id}:${q.qty}`)
+        .sort()
+        .join();
+    const base = (s: string) => s.toLowerCase().replace(/ \d$/, '');
+    const linked = new Set<string>();
+    for (const x of readJson<RawNmsePart[]>(input.freighterFile)) {
+      const kind = x.category as FreighterKind;
+      if (!KIND_ORDER.includes(kind)) throw new Error(`freighter module ${x.id}: bad kind ${kind}`);
+      const want = sig(inputsOf(x));
+      const match = [...items.values()].find(
+        (i) =>
+          !linked.has(i.id) &&
+          !i.manual &&
+          i.cat === 'buildings' &&
+          base(i.name.en) === base(x.name.en) &&
+          sig(recipes.find((r) => r.id === `craft-${i.id}`)?.inputs ?? []) === want,
+      );
+      if (!match) {
+        addNmse(x, 'buildings', { freighter: kind });
+        continue;
+      }
+      linked.add(match.id);
+      match.freighter = kind;
+      // Official pt-br names (and the numbered storage rooms) from the game's own strings.
+      if (match.name.pt === match.name.en || match.name.en !== x.name.en) match.name = x.name;
+      if (match.group.pt === match.group.en) match.group = x.group;
+    }
+  }
+
   // Manual overrides (e.g. COSMOS items not yet in the upstream data).
   for (const ov of input.overrides) {
     for (const o of ov.items ?? []) {
@@ -239,7 +365,10 @@ export function buildCatalog(input: BuildInput): BuildOutput {
         warnings.push(`override item ${o.id} already exists upstream; the override can be removed`);
         continue;
       }
-      const cat = o.cat ?? 'others';
+      if (o.part && !isValidPart(o.part)) {
+        throw new Error(`override item ${o.id}: unknown part ${JSON.stringify(o.part)}`);
+      }
+      const cat = o.cat ?? (o.part ? PART_CATEGORIES[o.part.kind] : 'others');
       items.set(o.id, {
         id: o.id,
         cat,
@@ -249,6 +378,7 @@ export function buildCatalog(input: BuildInput): BuildOutput {
         value: o.value ?? 0,
         currency: o.currency ?? 'Credits',
         obtain: [],
+        ...(o.part ? { part: o.part } : {}),
         manual: true,
       });
       descriptions[cat] ??= {};
@@ -312,7 +442,11 @@ export function buildCatalog(input: BuildInput): BuildOutput {
   }
 
   const categories = [
-    ...new Set([...Object.values(ITEM_FILES), ...[...items.values()].map((i) => i.cat)]),
+    ...new Set([
+      ...Object.values(ITEM_FILES),
+      ...Object.values(PART_CATEGORIES),
+      ...[...items.values()].map((i) => i.cat),
+    ]),
   ];
   return {
     catalog: {

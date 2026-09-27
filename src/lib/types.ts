@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 // Shared shape of the generated catalog (public/data/catalog.json).
+import type { FreighterKind } from './freighter.ts';
 
 export type Lang = 'en' | 'pt';
 export type Localized = Record<Lang, string>;
@@ -8,6 +9,17 @@ export type RecipeType = 'craft' | 'refine' | 'cook';
 export interface Qty {
   id: string;
   qty: number;
+}
+
+export type PartKind = 'starship' | 'corvette';
+
+/** Where a starship/corvette component fits (see src/lib/parts.ts). */
+export interface Part {
+  kind: PartKind;
+  /** Class key: fighter | hauler | explorer | solar | corvette. */
+  cls: string;
+  /** Slot key within the class (cockpit, wings, engines, ...). */
+  slot: string;
 }
 
 export interface Item {
@@ -24,6 +36,10 @@ export interface Item {
   colour?: string;
   /** Recipe types that produce this item; empty means gathered/bought/rewarded. */
   obtain: RecipeType[];
+  /** Set for starship/corvette components usable in the ship builder. */
+  part?: Part;
+  /** Set for freighter base modules usable in the freighter planner. */
+  freighter?: FreighterKind;
   /** Added by hand from scripts/overrides (not present in the upstream data). */
   manual?: boolean;
 }
@@ -40,7 +56,7 @@ export interface Recipe {
   ratio: string;
   /** Input quantity needed per single unit of output. */
   perUnit: Qty[];
-  source: 'assistantnms' | 'override';
+  source: 'assistantnms' | 'nmse' | 'override';
 }
 
 export interface Source {

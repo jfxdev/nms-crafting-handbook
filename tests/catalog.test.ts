@@ -8,7 +8,9 @@ import {
   perUnitOf,
   ratioOf,
   type BuildOutput,
+  type Overrides,
 } from '../scripts/lib/catalog.ts';
+import { corvetteSlotOf, isValidPart, starshipPartOf } from '../src/lib/parts.ts';
 
 const root = join(import.meta.dirname, '..');
 let out: BuildOutput;
@@ -16,6 +18,8 @@ let out: BuildOutput;
 beforeAll(() => {
   out = buildCatalog({
     rawDir: join(root, 'data/raw'),
+    corvetteFile: join(root, 'data/raw/nmse/corvette.json'),
+    freighterFile: join(root, 'data/raw/nmse/freighter.json'),
     source: JSON.parse(readFileSync(join(root, 'data/SOURCE.json'), 'utf8')),
     overrides: loadOverrides(join(root, 'scripts/overrides')),
     notesDir: join(root, 'content/descriptions'),
@@ -96,5 +100,100 @@ describe('I/O ratio', () => {
       { id: 'a', qty: 1 },
       { id: 'b', qty: 1 },
     ]);
+  });
+});
+
+describe('ship builder parts', () => {
+  const build = (overrides: Overrides[]) =>
+    buildCatalog({
+      rawDir: join(root, 'data/raw'),
+      source: JSON.parse(readFileSync(join(root, 'data/SOURCE.json'), 'utf8')),
+      overrides,
+      hasIcon: () => false,
+    });
+
+  it('classifies every upstream starship component into a class and slot', () => {
+    const parts = out.catalog.items.filter((i) => i.part?.kind === 'starship');
+    expect(parts.length).toBe(281);
+    expect(parts.every((i) => i.cat === 'starshipParts' && isValidPart(i.part!))).toBe(true);
+    expect(item('other461').part).toEqual({ kind: 'starship', cls: 'fighter', slot: 'cockpit' });
+    expect(item('other470').part).toEqual({ kind: 'starship', cls: 'fighter', slot: 'wings' });
+    expect(out.warnings.filter((w) => w.includes('unclassified'))).toEqual([]);
+  });
+
+  it('parses the slot from the game description', () => {
+    const desc = "A subcomponent. This module determines the style and position of the ship's ";
+    expect(
+      starshipPartOf('Solar Starship Component', `${desc}primary <STELLAR>solar sails<>.`),
+    ).toEqual({ kind: 'starship', cls: 'solar', slot: 'sails' });
+    expect(starshipPartOf('Hauler Starship Component', `${desc}<STELLAR>engines<>.`)?.slot).toBe(
+      'engines',
+    );
+    expect(starshipPartOf('Starship Subcomponent', desc)).toBeUndefined();
+  });
+
+  it('imports corvette parts from NMSE with slots and Corvette Workshop recipes', () => {
+    const parts = out.catalog.items.filter((i) => i.part?.kind === 'corvette');
+    expect(parts.length).toBeGreaterThan(150);
+    expect(parts.every((i) => i.cat === 'corvetteParts' && isValidPart(i.part!))).toBe(true);
+    expect(parts.filter((i) => !i.icon).map((i) => i.id)).toEqual(['B_LAN_B']);
+    expect(item('B_COK_A').name).toEqual({
+      en: 'Titan-class Cockpit',
+      pt: 'Cockpit da classe titã',
+    });
+    expect(item('B_GEN_3').part?.slot).toBe('reactors');
+    // Aeron Drive: 20 Pugneum + 1 Salvaged Glass + 5 Metal Plating.
+    expect(recipe('craft-B_WNG_P').inputs).toEqual([
+      { id: 'raw31', qty: 20 },
+      { id: 'cur80', qty: 1 },
+      { id: 'prod6', qty: 5 },
+    ]);
+    expect(out.catalog.usedIn['raw31']).toContain('craft-B_WNG_P');
+  });
+
+  it('maps corvette categories to slots', () => {
+    expect(corvetteSlotOf('Gear, Engine', 'Corvette Landing Gear')).toBe('gear');
+    expect(corvetteSlotOf('None', 'Corvette Reactor Module')).toBe('reactors');
+    expect(corvetteSlotOf('None', 'Something else')).toBeUndefined();
+  });
+
+  it('accepts corvette parts from overrides and rejects unknown slots', () => {
+    const corvette = {
+      id: 'corvette-test',
+      name: { en: 'Test Hab', pt: 'Hab de teste' },
+      part: { kind: 'corvette' as const, cls: 'corvette', slot: 'habitation' },
+    };
+    const built = build([{ items: [corvette] }]);
+    const found = built.catalog.items.find((i) => i.id === 'corvette-test')!;
+    expect(found.cat).toBe('corvetteParts');
+    expect(found.part).toEqual(corvette.part);
+    expect(() =>
+      build([{ items: [{ ...corvette, part: { ...corvette.part, slot: 'x' } }] }]),
+    ).toThrow(/unknown part/);
+  });
+});
+
+describe('freighter modules', () => {
+  const modules = () => out.catalog.items.filter((i) => i.freighter);
+
+  it('links upstream modules and fills their pt-br names from the game strings', () => {
+    expect(item('build882').freighter).toBe('room');
+    expect(item('build882').name).toEqual({ en: 'Refiner Room', pt: 'Sala do refinador' });
+    expect(item('build887').name).toEqual({ en: 'Storage Room 0', pt: 'Sala de armazenamento 0' });
+  });
+
+  it('adds modules missing upstream, with recipes, and none of the legacy parts', () => {
+    expect(item('FRE_CORR_A').freighter).toBe('corridor');
+    expect(recipe('craft-FRE_CORR_A').inputs).toEqual([
+      { id: 'raw32', qty: 30 },
+      { id: 'raw7', qty: 5 },
+    ]);
+    expect(item('build2').freighter).toBeUndefined();
+    const all = modules();
+    expect(all.length).toBeGreaterThanOrEqual(40);
+    expect(new Set(all.map((i) => i.freighter))).toEqual(
+      new Set(['corridor', 'room', 'stairs', 'exterior']),
+    );
+    expect(all.every((i) => i.icon && out.catalog.producedBy[i.id])).toBe(true);
   });
 });

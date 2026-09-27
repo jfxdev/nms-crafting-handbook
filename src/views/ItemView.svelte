@@ -13,7 +13,8 @@
   import type { Store } from '../lib/data.ts';
   import { CATEGORY_LABEL, fmt, lang, loc, other, RECIPE_LABEL, t } from '../lib/i18n.svelte.ts';
   import { gameTextToHtml, markdownToHtml } from '../lib/gametext.ts';
-  import { itemHref, replaceHash, router } from '../lib/router.svelte.ts';
+  import { classDef } from '../lib/parts.ts';
+  import { builderHref, itemHref, replaceHash, router } from '../lib/router.svelte.ts';
   import type { Recipe, RecipeType } from '../lib/types.ts';
 
   let { store, id }: { store: Store; id: string } = $props();
@@ -25,6 +26,8 @@
   const produced = $derived(store.catalog.producedBy[id] ?? []);
   const used = $derived(store.catalog.usedIn[id] ?? []);
   const alt = $derived(item ? other(item.name) : '');
+  const partCls = $derived(item?.part ? classDef(item.part.cls) : undefined);
+  const partSlot = $derived(partCls?.slots.find((s) => s.key === item?.part?.slot));
   const params = $derived(router.route.params);
   const expanded = $derived(new Set((params.get('all') ?? '').split(',').filter(Boolean)));
 
@@ -136,6 +139,17 @@
           </div>
         {/if}
       </dl>
+      {#if item.part && partCls && partSlot}
+        <p class="mb-0 mt-2 flex flex-wrap items-center gap-2 text-sm">
+          <span>{t('fitsIn', { cls: loc(partCls.label), slot: loc(partSlot.label) })}</span>
+          <a
+            href={builderHref({ c: partCls.key, [partSlot.key]: item.id })}
+            class="bg-accent rounded-full px-3 py-1 font-semibold text-[#111] no-underline"
+          >
+            🚀 {t('buildWith')}
+          </a>
+        </p>
+      {/if}
     </div>
   </header>
 

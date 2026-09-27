@@ -1,18 +1,29 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 // Hash routes: #/?q=&f=&c=  (search)   #/item/<id>?n=<qty>  (item page)
+//              #/builder?c=<class>&<slot>=<item id>  (ship builder)
+//              #/freighter?p=<encoded plan>  (freighter planner)
 
 export type Route =
   | { name: 'search'; params: URLSearchParams }
-  | { name: 'item'; id: string; params: URLSearchParams };
+  | { name: 'item'; id: string; params: URLSearchParams }
+  | { name: 'builder'; params: URLSearchParams }
+  | { name: 'freighter'; params: URLSearchParams };
 
 export function parseRoute(hash = location.hash): Route {
   const [path = '', query = ''] = hash.replace(/^#/, '').split('?');
   const params = new URLSearchParams(query);
+  if (path === '/builder') return { name: 'builder', params };
+  if (path === '/freighter') return { name: 'freighter', params };
   const m = /^\/item\/(.+)$/.exec(path);
   return m ? { name: 'item', id: decodeURIComponent(m[1]!), params } : { name: 'search', params };
 }
 
 export const itemHref = (id: string): string => `#/item/${encodeURIComponent(id)}`;
+
+export function builderHref(params: URLSearchParams | Record<string, string>): string {
+  const q = new URLSearchParams(params).toString();
+  return q ? `#/builder?${q}` : '#/builder';
+}
 
 export function searchHref(params: URLSearchParams): string {
   const q = params.toString();

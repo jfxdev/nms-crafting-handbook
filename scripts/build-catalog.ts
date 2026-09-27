@@ -11,6 +11,8 @@ export function run(): void {
   const source = JSON.parse(readFileSync(join(root, 'data/SOURCE.json'), 'utf8'));
   const { catalog, descriptions, warnings } = buildCatalog({
     rawDir: join(root, 'data/raw'),
+    corvetteFile: join(root, 'data/raw/nmse/corvette.json'),
+    freighterFile: join(root, 'data/raw/nmse/freighter.json'),
     source,
     overrides: loadOverrides(join(root, 'scripts/overrides')),
     notesDir: join(root, 'content/descriptions'),

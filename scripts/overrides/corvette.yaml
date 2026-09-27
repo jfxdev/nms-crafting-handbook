@@ -1,0 +1,25 @@
+# Peças de Corveta adicionadas à mão para o "Montar nave" (#/builder?c=corvette).
+#
+# As peças vêm do NMSE (data/raw/nmse/corvette.json, `npm run data:update-nmse`). Use este
+# arquivo só para peças que ainda faltarem lá, com dados verificados no jogo (nome EN + nome oficial
+# PT-BR, custo e receita, se houver).
+#
+# Slots (part.slot): cockpit, habitation, access, reactors, engines, gear, wings, hull,
+#   connectors, weapons, decor, shields, interior (ver src/lib/parts.ts).
+#
+# Formato:
+# items:
+#   - id: corvette-hab-example           # ids manuais de corveta usam o prefixo "corvette-"
+#     part: { kind: corvette, cls: corvette, slot: habitation }
+#     name: { en: "<nome EN>", pt: "<nome oficial PT-BR>" }
+#     group: { en: Corvette Module, pt: Módulo de corveta }
+#     description: { en: "...", pt: "..." }
+#     icon: null                         # ou caminho em public/icons, ex.: other/900.webp
+#     value: 0                           # custo (Salvaged Data / unidades), se conhecido
+#     currency: Salvaged Data
+# recipes:
+#   - type: craft
+#     inputs: [{ id: prod6, qty: 10 }]
+#     output: { id: corvette-hab-example, qty: 1 }
+items: []
+recipes: []

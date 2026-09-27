@@ -11,6 +11,7 @@ import {
   existsSync,
   mkdirSync,
   mkdtempSync,
+  readdirSync,
   readFileSync,
   rmSync,
   writeFileSync,
@@ -24,6 +25,7 @@ import { ITEM_FILES, RECIPE_FILES, UPSTREAM_LANGS } from './lib/catalog.ts';
 import { run as buildCatalog } from './build-catalog.ts';
 
 const REPO = 'https://github.com/AssistantNMS/App';
+const NMSE_ICON_DIRS = ['corvette', 'freighter'];
 const ICON_SIZE = 96;
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const sourcePath = join(root, 'data/SOURCE.json');
@@ -83,7 +85,10 @@ try {
   const dirs = [...new Set([...icons].map((i) => dirname(i)))];
   git(tmp, 'sparse-checkout', 'add', ...dirs.map((d) => `/assets/images/${d}/`));
   const iconDir = join(root, 'public/icons');
-  rmSync(iconDir, { recursive: true, force: true });
+  // public/icons/{corvette,freighter} belong to scripts/update-nmse.ts.
+  for (const d of existsSync(iconDir) ? readdirSync(iconDir) : []) {
+    if (!NMSE_ICON_DIRS.includes(d)) rmSync(join(iconDir, d), { recursive: true, force: true });
+  }
   let ok = 0;
   const missing: string[] = [];
   for (const icon of [...icons].sort()) {
